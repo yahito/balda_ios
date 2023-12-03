@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CustomView.draw(_:):CustomView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "eye.size.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LetterKeyboardView.setupKeys():LetterKeyboardView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+            <PersistentString
+               value = "bounds.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.showKeyboard(_:):GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "allowBombs">
+            </PersistentString>
+            <PersistentString
+               value = " getBomb() ">
+            </PersistentString>
+            <PersistentString
+               value = "getBomb()">
+            </PersistentString>
+            <PersistentString
+               value = "currentSelectedCells">
+            </PersistentString>
+            <PersistentString
+               value = "sender.title(for: .normal)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.finishStep():GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedTextLabel.text!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CustomView.touchesCancelled(_:with:):CustomView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "touches.first">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameViewController.screenTapped():GameViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Words.getRandomWord(2)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.touchesBegan(_:with:):GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.bounds.width">
+            </PersistentString>
+            <PersistentString
+               value = "keyboardView.isHidden">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "move(x:y:) in LocalClass #1 in CustomView.extractedFunc(_:):CustomView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "outerInstance?.firstEyePos">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.initBomb(_:):GridView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GridView.init(frame:):GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lettersCells">
+            </PersistentString>
+            <PersistentString
+               value = "availableWidth">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:AppDelegate.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GridView.createFireEmitter(_:):GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "buttonField.bounds.midX">
+            </PersistentString>
+            <PersistentString
+               value = "buttonField.bounds.midY">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Game.setLetter(_:_:_:):Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "allowUncommited">
+            </PersistentString>
+            <PersistentString
+               value = "uncommited">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameGridState.encode(to:):GameState.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "turn">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in Game.localInput(_:):Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.uncommited">
+            </PersistentString>
+            <PersistentString
+               value = "self.state.words">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.updateL():GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lettersCells[i][j].titleLabel?.text">
+            </PersistentString>
+            <PersistentString
+               value = "lettersCells[i][j].titleLabel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CompOpponent.nextStep():CompOpponent.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ress!.getWord()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Game.init(_:_:):Game.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GridView.updateSelectedText():GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedTextLabel.isHidden">
+            </PersistentString>
+            <PersistentString
+               value = "cellsToHighlight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Game.__finishStep():Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "opponent1!.bomb">
+            </PersistentString>
+            <PersistentString
+               value = "view.getHiglightedCells()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.game.didset:GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Game.init(_:):Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "grid[i].first">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameGridState.init(from:):GameState.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GameViewController.nextGamePressed():GameViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gridState">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Game.skipStep():Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentOpponent">
+            </PersistentString>
+            <PersistentString
+               value = "opponent1!.bomb">
+            </PersistentString>
+            <PersistentString
+               value = "state">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Game.move():Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Constants.size ** 2">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Game.resetStep():Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "grid">
+            </PersistentString>
+            <PersistentString
+               value = "uncommited">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.restoreData():AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "state">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Game.noIdea(_:):Game.swift">
+      </ContextState>
+      <ContextState
+         contextName = "StartMenuViewController.difficultySelected(_:):StartMenuViewConvtroller.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lang">
+            </PersistentString>
+            <PersistentString
+               value = "sender.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.application(_:didFinishLaunchingWithOptions:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "anotherReference?.grid[0][0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.handleTap(recognizer:):GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static YourClassName.initBase():Words.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " Bundle.main.url(forResource: &quot;enot&quot;, withExtension: nil)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.nextStep():GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "game">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Game.checkBomb(_:_:):Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "opponent.bomb">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.highlightNextCell():GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "allowBombs">
+            </PersistentString>
+            <PersistentString
+               value = "lettersCells[cell.0][cell.1]">
+            </PersistentString>
+            <PersistentString
+               value = "self.highlightedCells">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PlayerView.setupViews():ScoreBoard.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "wordsList.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.handleLetterSelection(_:):GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "keyboardView.isDescendant(of: self)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Game.finishStep(_:_:_:):Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentOpponent">
+            </PersistentString>
+            <PersistentString
+               value = "opponent">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
