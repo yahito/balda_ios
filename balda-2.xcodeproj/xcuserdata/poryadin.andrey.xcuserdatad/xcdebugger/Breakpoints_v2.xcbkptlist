@@ -18,68 +18,6 @@
             endingLineNumber = "134"
             landmarkName = "draw(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A0BD3A8A-12D0-42FF-A337-EC898D39030F - ef5699ec6400673d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.draw(__C.CGRect) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  uuid = "A0BD3A8A-12D0-42FF-A337-EC898D39030F - ef5699ec6400673d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.draw(__C.CGRect) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "152">
-               </Location>
-               <Location
-                  uuid = "A0BD3A8A-12D0-42FF-A337-EC898D39030F - ef5699ec6400673d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.draw(__C.CGRect) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "232">
-               </Location>
-               <Location
-                  uuid = "A0BD3A8A-12D0-42FF-A337-EC898D39030F - ef5699ec6400673d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.draw(__C.CGRect) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "316">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -128,38 +66,6 @@
             endingLineNumber = "140"
             landmarkName = "draw(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C8923694-80FF-4E65-BF9F-AAA4D1D065EC - ef5699ec640067f3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.draw(__C.CGRect) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "420">
-               </Location>
-               <Location
-                  uuid = "C8923694-80FF-4E65-BF9F-AAA4D1D065EC - ef5699ec640064cc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.draw(__C.CGRect) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "380">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -176,68 +82,6 @@
             endingLineNumber = "31"
             landmarkName = "touchesMoved(_:with:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D8D5BE67-7406-4CB3-9E7C-86D7982C791D - eb4e03775bee2892"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.touchesMoved(_: Swift.Set&lt;__C.UITouch&gt;, with: Swift.Optional&lt;__C.UIEvent&gt;) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "D8D5BE67-7406-4CB3-9E7C-86D7982C791D - eb4e03775bee2892"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.touchesMoved(_: Swift.Set&lt;__C.UITouch&gt;, with: Swift.Optional&lt;__C.UIEvent&gt;) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "192">
-               </Location>
-               <Location
-                  uuid = "D8D5BE67-7406-4CB3-9E7C-86D7982C791D - eb4e03775bee2892"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.touchesMoved(_: Swift.Set&lt;__C.UITouch&gt;, with: Swift.Optional&lt;__C.UIEvent&gt;) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "D8D5BE67-7406-4CB3-9E7C-86D7982C791D - eb4e03775bee2892"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.touchesMoved(_: Swift.Set&lt;__C.UITouch&gt;, with: Swift.Optional&lt;__C.UIEvent&gt;) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "180">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -286,38 +130,6 @@
             endingLineNumber = "36"
             landmarkName = "touchesMoved(_:with:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3A11EFE1-5777-4A6E-9FFC-5A020664857A - eb4e03775bee2937"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.touchesMoved(_: Swift.Set&lt;__C.UITouch&gt;, with: Swift.Optional&lt;__C.UIEvent&gt;) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "296">
-               </Location>
-               <Location
-                  uuid = "3A11EFE1-5777-4A6E-9FFC-5A020664857A - eb4e03775bee2937"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.touchesMoved(_: Swift.Set&lt;__C.UITouch&gt;, with: Swift.Optional&lt;__C.UIEvent&gt;) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "284">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -366,38 +178,6 @@
             endingLineNumber = "106"
             landmarkName = "handleDoubleTap(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "81C09470-47BF-41BA-B4A7-992E56C116EB - d40644c71a565208"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.getCirclePoint(x: Swift.Int, y: Swift.Int, circleCenterPoint: __C.CGPoint) -&gt; __C.CGPoint"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "292">
-               </Location>
-               <Location
-                  uuid = "81C09470-47BF-41BA-B4A7-992E56C116EB - bce04872b38956ef"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.handleDoubleTap(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "98"
-                  endingLineNumber = "98"
-                  offsetFromSymbolStart = "184">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -414,38 +194,6 @@
             endingLineNumber = "177"
             landmarkName = "backgroundTask()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C8795575-1774-403A-BD49-7A7E43C76689 - f98a9d4219284626"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.Fly.backgroundTask() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "171"
-                  endingLineNumber = "171"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  uuid = "C8795575-1774-403A-BD49-7A7E43C76689 - f98a9d4219284605"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.Fly.backgroundTask() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "172"
-                  endingLineNumber = "172"
-                  offsetFromSymbolStart = "108">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -462,38 +210,6 @@
             endingLineNumber = "176"
             landmarkName = "backgroundTask()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D2C31CB4-BC73-483D-9C63-80C61CC52481 - f98a9d4219284626"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.Fly.backgroundTask() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "171"
-                  endingLineNumber = "171"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  uuid = "D2C31CB4-BC73-483D-9C63-80C61CC52481 - f98a9d4219284626"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CustomView.Fly.backgroundTask() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "171"
-                  endingLineNumber = "171"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -510,38 +226,6 @@
             endingLineNumber = "87"
             landmarkName = "move(x:y:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0328B5BD-CB6E-49FC-A924-26637650FDF2 - 973ce9b869bd4f17"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LocalClass.move(x: Swift.Int, y: Swift.Int) -&gt; () in balda_2.CustomView.extractedFunc(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "1256">
-               </Location>
-               <Location
-                  uuid = "0328B5BD-CB6E-49FC-A924-26637650FDF2 - 7f9ca3e420bd03b1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in LocalClass.move(x: Swift.Int, y: Swift.Int) -&gt; () in balda_2.CustomView.extractedFunc(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -558,38 +242,6 @@
             endingLineNumber = "83"
             landmarkName = "move(x:y:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D76B8AB1-89F3-4301-AE21-39EF3855D824 - 973ce9b869bd4f74"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LocalClass.move(x: Swift.Int, y: Swift.Int) -&gt; () in balda_2.CustomView.extractedFunc(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  uuid = "D76B8AB1-89F3-4301-AE21-39EF3855D824 - 973ce9b869bd4f74"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LocalClass.move(x: Swift.Int, y: Swift.Int) -&gt; () in balda_2.CustomView.extractedFunc(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CustomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "208">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -602,25 +254,9 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
-            landmarkName = "handleLetterSelection(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "96958E0D-93A6-407E-810C-A3EA6686405D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "balda-2/GridView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "handleLetterSelection(_:)"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "handleLetterSelection(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -634,72 +270,10 @@
             filePath = "balda-2/LetterKeyboardView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "setupKeys()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "24DE644E-D5E2-42C5-8E0F-7339C50DB13C - 2d2082ce198c0feb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.setupKeys() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "168">
-               </Location>
-               <Location
-                  uuid = "24DE644E-D5E2-42C5-8E0F-7339C50DB13C - 2d2082ce198c0cbe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.setupKeys() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "168">
-               </Location>
-               <Location
-                  uuid = "24DE644E-D5E2-42C5-8E0F-7339C50DB13C - 2d2082ce198c0332"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.setupKeys() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "232">
-               </Location>
-               <Location
-                  uuid = "24DE644E-D5E2-42C5-8E0F-7339C50DB13C - 2d2082ce198c0cd3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.setupKeys() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "232">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -712,72 +286,10 @@
             filePath = "balda-2/LetterKeyboardView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "keyTapped(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "64C6C9E4-F23F-455B-84BD-B65CCE048113 - fd002222a894c3ae"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.keyTapped(__C.UIButton) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "556">
-               </Location>
-               <Location
-                  uuid = "64C6C9E4-F23F-455B-84BD-B65CCE048113 - fd002222a894c3ae"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.keyTapped(__C.UIButton) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  uuid = "64C6C9E4-F23F-455B-84BD-B65CCE048113 - fd002222a894ced3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.keyTapped(__C.UIButton) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  uuid = "64C6C9E4-F23F-455B-84BD-B65CCE048113 - fd002222a894cf8c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.keyTapped(__C.UIButton) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -790,57 +302,10 @@
             filePath = "balda-2/LetterKeyboardView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "keyTapped(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B72498C2-DD23-4041-B8F1-AF6A553C7410 - fd002222a894c34f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.keyTapped(__C.UIButton) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "684">
-               </Location>
-               <Location
-                  uuid = "B72498C2-DD23-4041-B8F1-AF6A553C7410 - fd002222a894c34f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.keyTapped(__C.UIButton) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "556">
-               </Location>
-               <Location
-                  uuid = "B72498C2-DD23-4041-B8F1-AF6A553C7410 - fd002222a894cef4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.keyTapped(__C.UIButton) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
-                  offsetFromSymbolStart = "556">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -853,42 +318,10 @@
             filePath = "balda-2/LetterKeyboardView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "setupKeys()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8E2642E7-90A1-4D0A-AD54-A2BE18AE2B95 - 2d2082ce198c026c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.setupKeys() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "704">
-               </Location>
-               <Location
-                  uuid = "8E2642E7-90A1-4D0A-AD54-A2BE18AE2B95 - 2d2082ce198c026c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.setupKeys() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "904">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -901,8 +334,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "highlightNextCell(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -917,8 +350,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "highlightNextCell(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -933,8 +366,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "highlightNextCell(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -949,8 +382,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "highlightNextCell(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -965,8 +398,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "updateSelectedText()"
             landmarkType = "7">
          </BreakpointContent>
@@ -981,42 +414,10 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "init(frame:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2B469B59-EC07-4205-8C31-47189074B5A7 - c05819410933968"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.init(frame: __C.CGRect) -&gt; balda_2.GridView"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120"
-                  offsetFromSymbolStart = "1396">
-               </Location>
-               <Location
-                  uuid = "2B469B59-EC07-4205-8C31-47189074B5A7 - c05819410933968"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.init(frame: __C.CGRect) -&gt; balda_2.GridView"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120"
-                  offsetFromSymbolStart = "1332">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1029,56 +430,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "359"
-            endingLineNumber = "359"
-            landmarkName = "showKeyboard(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D46D00A8-A748-429F-9BCA-824FCA613EB1 - 443faa24865a9fd9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "363"
-                  endingLineNumber = "363"
-                  offsetFromSymbolStart = "760">
-               </Location>
-               <Location
-                  uuid = "D46D00A8-A748-429F-9BCA-824FCA613EB1 - 443faa24865a9fd9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "363"
-                  endingLineNumber = "363"
-                  offsetFromSymbolStart = "396">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BCB498D2-12A2-4FDA-960D-A52B29DA284E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "balda-2/GridView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "424"
-            endingLineNumber = "424"
+            startingLineNumber = "361"
+            endingLineNumber = "361"
             landmarkName = "showKeyboard(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1093,57 +446,10 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "cancelSelection()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "91A3834D-0090-4017-B233-11396A83A7EF - e16cbade5a853641"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.cancelSelection() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "144">
-               </Location>
-               <Location
-                  uuid = "91A3834D-0090-4017-B233-11396A83A7EF - e16cbade5a8536ae"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.cancelSelection() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "91A3834D-0090-4017-B233-11396A83A7EF - e16cbade5a853603"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.cancelSelection() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "68">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1156,8 +462,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "360"
-            endingLineNumber = "360"
+            startingLineNumber = "362"
+            endingLineNumber = "362"
             landmarkName = "showKeyboard(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1172,8 +478,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "363"
-            endingLineNumber = "363"
+            startingLineNumber = "365"
+            endingLineNumber = "365"
             landmarkName = "showKeyboard(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1188,8 +494,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "395"
-            endingLineNumber = "395"
+            startingLineNumber = "397"
+            endingLineNumber = "397"
             landmarkName = "showKeyboard(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1204,57 +510,10 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "323"
+            endingLineNumber = "323"
             landmarkName = "screenTapped()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D1D16E85-72C4-4D97-BB8B-95BEF877DF39 - 1b920c4b26f37b28"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.screenTapped() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "132">
-               </Location>
-               <Location
-                  uuid = "D1D16E85-72C4-4D97-BB8B-95BEF877DF39 - 1b920c4b26f37b28"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.screenTapped() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "136">
-               </Location>
-               <Location
-                  uuid = "D1D16E85-72C4-4D97-BB8B-95BEF877DF39 - 1b920c4b26f37b28"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.screenTapped() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "144">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1271,53 +530,6 @@
             endingLineNumber = "216"
             landmarkName = "loadTrieData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4783880C-A45A-48AC-9A46-0A9FA5492E89 - 678d596ca466f95b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static balda_2.YourClassName.initBase() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Words.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "864">
-               </Location>
-               <Location
-                  uuid = "4783880C-A45A-48AC-9A46-0A9FA5492E89 - 87dec043a15ef9d8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static balda_2.YourClassName.loadTrieData() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Words.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "4783880C-A45A-48AC-9A46-0A9FA5492E89 - 2cae01bfd979997d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static balda_2.Words.loadTrieData() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Words.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "64">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1330,102 +542,10 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "updateSelectedText()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D3E33DF0-D192-4DA5-B0FC-EC96D8E55B56 - 9c1328812fec5e27"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.updateSelectedText() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "146"
-                  endingLineNumber = "146"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  uuid = "D3E33DF0-D192-4DA5-B0FC-EC96D8E55B56 - 6b5ca53b54f0cdd6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((Swift.Int, Swift.Int)) -&gt; Swift.String in balda_2.GridView.updateSelectedText() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "148"
-                  endingLineNumber = "148"
-                  offsetFromSymbolStart = "132">
-               </Location>
-               <Location
-                  uuid = "D3E33DF0-D192-4DA5-B0FC-EC96D8E55B56 - 9c1328812fec5e46"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.updateSelectedText() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "147"
-                  endingLineNumber = "147"
-                  offsetFromSymbolStart = "88">
-               </Location>
-               <Location
-                  uuid = "D3E33DF0-D192-4DA5-B0FC-EC96D8E55B56 - 6b5ca53b54f0cdd6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((Swift.Int, Swift.Int)) -&gt; Swift.String in balda_2.GridView.updateSelectedText() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "148"
-                  endingLineNumber = "148"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  uuid = "D3E33DF0-D192-4DA5-B0FC-EC96D8E55B56 - 9c1328812fec56c4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.updateSelectedText() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "88">
-               </Location>
-               <Location
-                  uuid = "D3E33DF0-D192-4DA5-B0FC-EC96D8E55B56 - 6b5ca53b54f0c558"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((Swift.Int, Swift.Int)) -&gt; Swift.String in balda_2.GridView.updateSelectedText() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "108">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1470,38 +590,6 @@
             endingLineNumber = "74"
             landmarkName = "subscript(row:column:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A6A756A5-D7CC-4230-B1F9-5341D0699E31 - 2e9a3bc9484abeb5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.subscript.setter : (Swift.Int, Swift.Int) -&gt; Swift.Character"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "336">
-               </Location>
-               <Location
-                  uuid = "A6A756A5-D7CC-4230-B1F9-5341D0699E31 - 2e9a3bc9484abeb5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.subscript.setter : (Swift.Int, Swift.Int) -&gt; Swift.Character"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "108">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1518,38 +606,6 @@
             endingLineNumber = "71"
             landmarkName = "subscript(row:column:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D02D7A43-BD8D-411F-9EF9-B78B97D38258 - 2e9a3bc9484abeeb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.subscript.setter : (Swift.Int, Swift.Int) -&gt; Swift.Character"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "96">
-               </Location>
-               <Location
-                  uuid = "D02D7A43-BD8D-411F-9EF9-B78B97D38258 - c986e5fb2c105ac6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.subscript.getter : (Swift.Int, Swift.Int) -&gt; Swift.Character"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
-                  offsetFromSymbolStart = "68">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1594,42 +650,10 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "482"
-            endingLineNumber = "482"
+            startingLineNumber = "476"
+            endingLineNumber = "476"
             landmarkName = "endLocalInput()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E838EEAA-C89B-4EAA-AA1A-5926689B6310 - 80764f28529197b1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.endLocalInput() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "424"
-                  endingLineNumber = "424"
-                  offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  uuid = "E838EEAA-C89B-4EAA-AA1A-5926689B6310 - 80764f28529197b1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.endLocalInput() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "424"
-                  endingLineNumber = "424"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1642,71 +666,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "351"
-            endingLineNumber = "351"
-            landmarkName = "showKeyboard(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A885B608-1AAE-415F-B2B6-E3BEB9D91F57 - 443faa24865a9af1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "323"
-                  endingLineNumber = "323"
-                  offsetFromSymbolStart = "136">
-               </Location>
-               <Location
-                  uuid = "A885B608-1AAE-415F-B2B6-E3BEB9D91F57 - 443faa24865a9af1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "323"
-                  endingLineNumber = "323"
-                  offsetFromSymbolStart = "124">
-               </Location>
-               <Location
-                  uuid = "A885B608-1AAE-415F-B2B6-E3BEB9D91F57 - 443faa24865a9b3b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "329"
-                  endingLineNumber = "329"
-                  offsetFromSymbolStart = "124">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2633C9F0-46C0-4AC8-BE84-00663A4631C5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "balda-2/GridView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "420"
-            endingLineNumber = "420"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
             landmarkName = "showKeyboard(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1737,8 +698,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "259"
-            endingLineNumber = "259"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
             landmarkName = "updateL()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1753,57 +714,10 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "394"
-            endingLineNumber = "394"
+            startingLineNumber = "396"
+            endingLineNumber = "396"
             landmarkName = "showKeyboard(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "FD03A38C-D020-44C7-AC05-3804E6A03966 - 443faa24865a9d96"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "380"
-                  endingLineNumber = "380"
-                  offsetFromSymbolStart = "1500">
-               </Location>
-               <Location
-                  uuid = "FD03A38C-D020-44C7-AC05-3804E6A03966 - 443faa24865a9d96"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "380"
-                  endingLineNumber = "380"
-                  offsetFromSymbolStart = "1340">
-               </Location>
-               <Location
-                  uuid = "FD03A38C-D020-44C7-AC05-3804E6A03966 - 5dbb4bdfd339aac5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((Swift.Int, Swift.Int)) -&gt; Swift.Bool in balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "380"
-                  endingLineNumber = "380"
-                  offsetFromSymbolStart = "68">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1816,72 +730,10 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "413"
-            endingLineNumber = "413"
+            startingLineNumber = "415"
+            endingLineNumber = "415"
             landmarkName = "showKeyboard(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "979E8113-D08E-4A05-873A-1C93C1EB4FDB - 443faa24865a93b9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "395"
-                  endingLineNumber = "395"
-                  offsetFromSymbolStart = "2060">
-               </Location>
-               <Location
-                  uuid = "979E8113-D08E-4A05-873A-1C93C1EB4FDB - 443faa24865a93d8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "394"
-                  endingLineNumber = "394"
-                  offsetFromSymbolStart = "1496">
-               </Location>
-               <Location
-                  uuid = "979E8113-D08E-4A05-873A-1C93C1EB4FDB - 443faa24865a9c8f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "373"
-                  endingLineNumber = "373"
-                  offsetFromSymbolStart = "1804">
-               </Location>
-               <Location
-                  uuid = "979E8113-D08E-4A05-873A-1C93C1EB4FDB - 443faa24865a9cae"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "372"
-                  endingLineNumber = "372"
-                  offsetFromSymbolStart = "1496">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1898,83 +750,6 @@
             endingLineNumber = "22"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "675806ED-3E9C-4973-9AA9-D3004B0E71E8 - 7609b2ef37a88c74"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.application(_: __C.UIApplication, didFinishLaunchingWithOptions: Swift.Optional&lt;Swift.Dictionary&lt;__C.UIApplicationLaunchOptionsKey, Any&gt;&gt;) -&gt; Swift.Bool"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  uuid = "675806ED-3E9C-4973-9AA9-D3004B0E71E8 - 7609b2ef37a88c15"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.application(_: __C.UIApplication, didFinishLaunchingWithOptions: Swift.Optional&lt;Swift.Dictionary&lt;__C.UIApplicationLaunchOptionsKey, Any&gt;&gt;) -&gt; Swift.Bool"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "675806ED-3E9C-4973-9AA9-D3004B0E71E8 - 7609b2ef37a88c15"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.application(_: __C.UIApplication, didFinishLaunchingWithOptions: Swift.Optional&lt;Swift.Dictionary&lt;__C.UIApplicationLaunchOptionsKey, Any&gt;&gt;) -&gt; Swift.Bool"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "675806ED-3E9C-4973-9AA9-D3004B0E71E8 - 7609b2ef37a88c89"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.application(_: __C.UIApplication, didFinishLaunchingWithOptions: Swift.Optional&lt;Swift.Dictionary&lt;__C.UIApplicationLaunchOptionsKey, Any&gt;&gt;) -&gt; Swift.Bool"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "675806ED-3E9C-4973-9AA9-D3004B0E71E8 - 7609b2ef37a88ce8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.application(_: __C.UIApplication, didFinishLaunchingWithOptions: Swift.Optional&lt;Swift.Dictionary&lt;__C.UIApplicationLaunchOptionsKey, Any&gt;&gt;) -&gt; Swift.Bool"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "96">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1991,68 +766,6 @@
             endingLineNumber = "38"
             landmarkName = "applicationWillResignActive(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9A4B0E4B-0F77-420E-BDE8-D99C22BB4EC4 - a97a4496e957b7aa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.applicationWillResignActive(__C.UIApplication) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  uuid = "9A4B0E4B-0F77-420E-BDE8-D99C22BB4EC4 - a97a4496e957b468"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.applicationWillResignActive(__C.UIApplication) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  uuid = "9A4B0E4B-0F77-420E-BDE8-D99C22BB4EC4 - a97a4496e957b7cf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.applicationWillResignActive(__C.UIApplication) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  uuid = "9A4B0E4B-0F77-420E-BDE8-D99C22BB4EC4 - a97a4496e957b6a2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.applicationWillResignActive(__C.UIApplication) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2069,38 +782,6 @@
             endingLineNumber = "54"
             landmarkName = "saveData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DDF28A66-7C5A-4B8F-AA97-7B2557850F44 - 3fadb31947df8956"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.saveData() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  uuid = "DDF28A66-7C5A-4B8F-AA97-7B2557850F44 - 3fadb31947df898c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.saveData() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2117,38 +798,6 @@
             endingLineNumber = "60"
             landmarkName = "restoreData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B99193ED-5E75-4597-87A8-3ACD876E644D - 19205d991d93cfa0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.restoreData() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "B99193ED-5E75-4597-87A8-3ACD876E644D - 19205d991d93cf62"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.AppDelegate.restoreData() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2209,8 +858,8 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "255"
-            endingLineNumber = "255"
+            startingLineNumber = "379"
+            endingLineNumber = "379"
             landmarkName = "finishStepPressed()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2225,8 +874,8 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "297"
-            endingLineNumber = "297"
+            startingLineNumber = "425"
+            endingLineNumber = "425"
             landmarkName = "undoSelectionPressed()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2241,8 +890,8 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
+            startingLineNumber = "343"
+            endingLineNumber = "343"
             landmarkName = "nextGamePressed()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2257,8 +906,8 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
+            startingLineNumber = "426"
+            endingLineNumber = "426"
             landmarkName = "undoSelectionPressed()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2273,8 +922,8 @@
             filePath = "balda-2/Game.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "293"
-            endingLineNumber = "293"
+            startingLineNumber = "292"
+            endingLineNumber = "292"
             landmarkName = "finishStep(_:_:_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2289,8 +938,8 @@
             filePath = "balda-2/Game.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "346"
-            endingLineNumber = "346"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
             landmarkName = "localInput(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2305,8 +954,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "game"
             landmarkType = "24">
          </BreakpointContent>
@@ -2321,72 +970,10 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6CF658EA-1E4D-44BC-878F-8E803C9F9348 - 17457e83100bb54d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "904">
-               </Location>
-               <Location
-                  uuid = "6CF658EA-1E4D-44BC-878F-8E803C9F9348 - 17457e83100bb50f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "860">
-               </Location>
-               <Location
-                  uuid = "6CF658EA-1E4D-44BC-878F-8E803C9F9348 - 17457e83100bb420"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "860">
-               </Location>
-               <Location
-                  uuid = "6CF658EA-1E4D-44BC-878F-8E803C9F9348 - 17457e83100bb50f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "876">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2399,57 +986,10 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DAC59147-6E79-4391-8C1C-DD98B1980CA0 - 17457e83100bb58b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "740">
-               </Location>
-               <Location
-                  uuid = "DAC59147-6E79-4391-8C1C-DD98B1980CA0 - 17457e83100bb58b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "732">
-               </Location>
-               <Location
-                  uuid = "DAC59147-6E79-4391-8C1C-DD98B1980CA0 - 17457e83100bb4ac"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "732">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2462,8 +1002,8 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2478,8 +1018,8 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2494,42 +1034,10 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "960A9062-534C-458E-A3DB-D1C9DB87EDB8 - 17457e83100bb466"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "912">
-               </Location>
-               <Location
-                  uuid = "960A9062-534C-458E-A3DB-D1C9DB87EDB8 - 17457e83100bb4c1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "1652">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2558,8 +1066,8 @@
             filePath = "balda-2/Game.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "303"
-            endingLineNumber = "303"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
             landmarkName = "__finishStep()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2578,68 +1086,6 @@
             endingLineNumber = "300"
             landmarkName = "handlePanGesture(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "77ED3379-D36F-438A-BD95-81E96F057F13 - 8d77ebe08b6ac1d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;balda_2.GridView.CustomUITextField&gt;) -&gt; () in balda_2.GridView.handlePanGesture(__C.UIPanGestureRecognizer) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "277"
-                  endingLineNumber = "277"
-                  offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  uuid = "77ED3379-D36F-438A-BD95-81E96F057F13 - c23bbca244d64038"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (balda_2.GridView.CustomUITextField) -&gt; () in closure #1 (Swift.Array&lt;balda_2.GridView.CustomUITextField&gt;) -&gt; () in balda_2.GridView.handlePanGesture(__C.UIPanGestureRecognizer) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "279"
-                  endingLineNumber = "279"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "77ED3379-D36F-438A-BD95-81E96F057F13 - a499a0cfcf6dc114"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.handlePanGesture(__C.UIPanGestureRecognizer) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "277"
-                  endingLineNumber = "277"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  uuid = "77ED3379-D36F-438A-BD95-81E96F057F13 - 8d77ebe08b6ac3e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;balda_2.GridView.CustomUITextField&gt;) -&gt; () in balda_2.GridView.handlePanGesture(__C.UIPanGestureRecognizer) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "278"
-                  endingLineNumber = "278"
-                  offsetFromSymbolStart = "72">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2652,8 +1098,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "403"
-            endingLineNumber = "403"
+            startingLineNumber = "405"
+            endingLineNumber = "405"
             landmarkName = "showKeyboard(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2668,8 +1114,8 @@
             filePath = "balda-2/Game.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "323"
-            endingLineNumber = "323"
+            startingLineNumber = "322"
+            endingLineNumber = "322"
             landmarkName = "__finishStep()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2688,38 +1134,6 @@
             endingLineNumber = "231"
             landmarkName = "checkBomb(_:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A6FB8938-B17F-4688-A1A2-D5493B122253 - 7baf4138f58e74d8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.checkBomb(balda_2.Opponent, Swift.Array&lt;(Swift.Int, Swift.Int)&gt;) -&gt; balda_2.Result"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "112"
-                  endingLineNumber = "112"
-                  offsetFromSymbolStart = "520">
-               </Location>
-               <Location
-                  uuid = "A6FB8938-B17F-4688-A1A2-D5493B122253 - 7baf4138f58e74d8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.checkBomb(balda_2.Opponent, Swift.Array&lt;(Swift.Int, Swift.Int)&gt;) -&gt; balda_2.Result"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "112"
-                  endingLineNumber = "112"
-                  offsetFromSymbolStart = "80">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2764,8 +1178,8 @@
             filePath = "balda-2/Game.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "314"
-            endingLineNumber = "314"
+            startingLineNumber = "313"
+            endingLineNumber = "313"
             landmarkName = "__finishStep()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2796,8 +1210,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "479"
-            endingLineNumber = "479"
+            startingLineNumber = "473"
+            endingLineNumber = "473"
             landmarkName = "endLocalInput()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2812,8 +1226,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
             landmarkName = "setVisibleValue(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2828,8 +1242,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
             landmarkName = "updateL()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2844,8 +1258,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
             landmarkName = "updateL()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2880,38 +1294,6 @@
             endingLineNumber = "71"
             landmarkName = "nextStep()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "83A7F993-0EB3-4A17-97D0-37ED13EE2693 - a06e98925255b203"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CompOpponent.nextStep() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CompOpponent.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "596">
-               </Location>
-               <Location
-                  uuid = "83A7F993-0EB3-4A17-97D0-37ED13EE2693 - a06e98925255b203"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.CompOpponent.nextStep() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/CompOpponent.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "684">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2944,53 +1326,6 @@
             endingLineNumber = "202"
             landmarkName = "finishStep(_:_:_:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3FCE7C90-E3A7-4F48-BEB3-759531093F54 - 7826933fa610d8b8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in balda_2.Game.finishStep(balda_2.Opponent, Swift.Array&lt;(Swift.Int, Swift.Int)&gt;, Swift.String) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "124">
-               </Location>
-               <Location
-                  uuid = "3FCE7C90-E3A7-4F48-BEB3-759531093F54 - 7826933fa610dbd1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in balda_2.Game.finishStep(balda_2.Opponent, Swift.Array&lt;(Swift.Int, Swift.Int)&gt;, Swift.String) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "372">
-               </Location>
-               <Location
-                  uuid = "3FCE7C90-E3A7-4F48-BEB3-759531093F54 - 7826933fa610dbee"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in balda_2.Game.finishStep(balda_2.Opponent, Swift.Array&lt;(Swift.Int, Swift.Int)&gt;, Swift.String) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "432">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3007,38 +1342,6 @@
             endingLineNumber = "188"
             landmarkName = "finishStep(_:_:_:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F07D58F2-ABEB-471F-B1A9-4B21EB9AD940 - 8dd6155c919a95c5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.finishStep(balda_2.Opponent, Swift.Array&lt;(Swift.Int, Swift.Int)&gt;, Swift.String) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "1276">
-               </Location>
-               <Location
-                  uuid = "F07D58F2-ABEB-471F-B1A9-4B21EB9AD940 - 8dd6155c919a958b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.finishStep(balda_2.Opponent, Swift.Array&lt;(Swift.Int, Swift.Int)&gt;, Swift.String) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97"
-                  offsetFromSymbolStart = "1276">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3055,38 +1358,6 @@
             endingLineNumber = "197"
             landmarkName = "finishStep(_:_:_:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0EBCA69A-CC6D-4C9B-B9FD-A995E7B7C327 - 7826933fa610d855"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in balda_2.Game.finishStep(balda_2.Opponent, Swift.Array&lt;(Swift.Int, Swift.Int)&gt;, Swift.String) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "104">
-               </Location>
-               <Location
-                  uuid = "0EBCA69A-CC6D-4C9B-B9FD-A995E7B7C327 - 7826933fa610db93"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in balda_2.Game.finishStep(balda_2.Opponent, Swift.Array&lt;(Swift.Int, Swift.Int)&gt;, Swift.String) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "102"
-                  endingLineNumber = "102"
-                  offsetFromSymbolStart = "104">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3099,8 +1370,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "448"
-            endingLineNumber = "448"
+            startingLineNumber = "442"
+            endingLineNumber = "442"
             landmarkName = "getBomb()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3115,8 +1386,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "451"
-            endingLineNumber = "451"
+            startingLineNumber = "445"
+            endingLineNumber = "445"
             landmarkName = "getBomb()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3131,42 +1402,10 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "343"
-            endingLineNumber = "343"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
             landmarkName = "initBomb(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "701A1608-E7FE-47D9-9A1E-9A68E6450E39 - eb8f6bea663b6db1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.initBomb((Swift.Int, Swift.Int)) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "356"
-                  endingLineNumber = "356"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "701A1608-E7FE-47D9-9A1E-9A68E6450E39 - eb8f6bea663b6dff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.initBomb((Swift.Int, Swift.Int)) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "354"
-                  endingLineNumber = "354"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3179,8 +1418,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "highlightNextCell(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3195,8 +1434,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "245"
-            endingLineNumber = "245"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
             landmarkName = "setVisibleValue(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3211,42 +1450,10 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "501"
-            endingLineNumber = "501"
+            startingLineNumber = "495"
+            endingLineNumber = "495"
             landmarkName = "addBurst(_:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BDEE5E2E-0765-46C5-AE00-6704BC0754A8 - 432889e42dd54c27"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.addBurst(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "502"
-                  endingLineNumber = "502"
-                  offsetFromSymbolStart = "304">
-               </Location>
-               <Location
-                  uuid = "BDEE5E2E-0765-46C5-AE00-6704BC0754A8 - 69d3307e07a3598f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.CALayer) -&gt; Swift.Bool in balda_2.GridView.addBurst(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "502"
-                  endingLineNumber = "502"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3259,8 +1466,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "506"
-            endingLineNumber = "506"
+            startingLineNumber = "500"
+            endingLineNumber = "500"
             landmarkName = "addBurst(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3275,8 +1482,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "513"
-            endingLineNumber = "513"
+            startingLineNumber = "507"
+            endingLineNumber = "507"
             landmarkName = "addBurst(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3291,8 +1498,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "505"
-            endingLineNumber = "505"
+            startingLineNumber = "499"
+            endingLineNumber = "499"
             landmarkName = "addBurst(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3307,42 +1514,10 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "532"
-            endingLineNumber = "532"
+            startingLineNumber = "526"
+            endingLineNumber = "526"
             landmarkName = "createFireEmitter(_:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F312A3DE-6062-4622-9B02-3903C6A2CC50 - 90d22b4a91e7bb59"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.createFireEmitter(balda_2.GridView.CustomUITextField) -&gt; __C.CAEmitterLayer"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "539"
-                  endingLineNumber = "539"
-                  offsetFromSymbolStart = "432">
-               </Location>
-               <Location
-                  uuid = "F312A3DE-6062-4622-9B02-3903C6A2CC50 - 90d22b4a91e7bb59"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.createFireEmitter(balda_2.GridView.CustomUITextField) -&gt; __C.CAEmitterLayer"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "539"
-                  endingLineNumber = "539"
-                  offsetFromSymbolStart = "76">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3355,8 +1530,8 @@
             filePath = "balda-2/ScoreBoard.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "setPlayer(name:score:words:fails:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3371,42 +1546,10 @@
             filePath = "balda-2/ScoreBoard.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "setPlayer(name:score:words:fails:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A6DBE76B-444D-41CC-8889-C53026B14045 - 660a85f70dd495b8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.PlayerView.setPlayer(name: Swift.String, score: Swift.Int, words: Swift.Array&lt;Swift.String&gt;) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/ScoreBoard.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "664">
-               </Location>
-               <Location
-                  uuid = "A6DBE76B-444D-41CC-8889-C53026B14045 - 660a85f70dd495b8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.PlayerView.setPlayer(name: Swift.String, score: Swift.Int, words: Swift.Array&lt;Swift.String&gt;) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/ScoreBoard.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "572">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3435,8 +1578,8 @@
             filePath = "balda-2/ScoreBoard.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "closeButtonTapped()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3467,8 +1610,8 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "301"
-            endingLineNumber = "301"
+            startingLineNumber = "429"
+            endingLineNumber = "429"
             landmarkName = "scoreButtonPressed()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3499,42 +1642,10 @@
             filePath = "balda-2/Game.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "316"
-            endingLineNumber = "316"
+            startingLineNumber = "315"
+            endingLineNumber = "315"
             landmarkName = "__finishStep()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "07561FA3-BE0C-4F21-AB03-A25FA0E895BF - 30d900437c72a6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.__finishStep() -&gt; balda_2.Result"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "198"
-                  endingLineNumber = "198"
-                  offsetFromSymbolStart = "1000">
-               </Location>
-               <Location
-                  uuid = "07561FA3-BE0C-4F21-AB03-A25FA0E895BF - 30d900437c72a6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.__finishStep() -&gt; balda_2.Result"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "198"
-                  endingLineNumber = "198"
-                  offsetFromSymbolStart = "1248">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3547,42 +1658,10 @@
             filePath = "balda-2/Game.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "312"
-            endingLineNumber = "312"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
             landmarkName = "__finishStep()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9ACDF0B9-5EB8-4618-8A6F-AA8D4A4B903B - 30d900437c72c1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.__finishStep() -&gt; balda_2.Result"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "195"
-                  endingLineNumber = "195"
-                  offsetFromSymbolStart = "636">
-               </Location>
-               <Location
-                  uuid = "9ACDF0B9-5EB8-4618-8A6F-AA8D4A4B903B - 30d900437c7122"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.__finishStep() -&gt; balda_2.Result"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "194"
-                  endingLineNumber = "194"
-                  offsetFromSymbolStart = "636">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3611,8 +1690,8 @@
             filePath = "balda-2/Game.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "313"
-            endingLineNumber = "313"
+            startingLineNumber = "312"
+            endingLineNumber = "312"
             landmarkName = "__finishStep()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3627,42 +1706,10 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "475"
-            endingLineNumber = "475"
+            startingLineNumber = "469"
+            endingLineNumber = "469"
             landmarkName = "endLocalInput()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CD24EBB4-E868-45DB-891C-0D1877454D46 - 80764f285291884f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.endLocalInput() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "462"
-                  endingLineNumber = "462"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "CD24EBB4-E868-45DB-891C-0D1877454D46 - 80764f28529188ae"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.endLocalInput() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "463"
-                  endingLineNumber = "463"
-                  offsetFromSymbolStart = "68">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3755,25 +1802,9 @@
             filePath = "balda-2/BottomPanelView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "handleHover(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "174F9065-752D-4AEB-84EF-25593DE548FB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "balda-2/GameViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "updateTextView(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3803,8 +1834,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "398"
-            endingLineNumber = "398"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
             landmarkName = "showKeyboard(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3819,57 +1850,10 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
+            startingLineNumber = "349"
+            endingLineNumber = "349"
             landmarkName = "nextGamePressed()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B480AF28-C6DC-4A9E-8029-A6F8B747C352 - 97030387406a3dae"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.difficultyTextField.getter : __C.UITextField"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "B480AF28-C6DC-4A9E-8029-A6F8B747C352 - 4ba8493b00b6e2c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; balda_2.GameViewController"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
-                  offsetFromSymbolStart = "316">
-               </Location>
-               <Location
-                  uuid = "B480AF28-C6DC-4A9E-8029-A6F8B747C352 - b223511af5da9273"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;balda_2.GameViewController&gt;"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
-                  offsetFromSymbolStart = "292">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3882,8 +1866,8 @@
             filePath = "balda-2/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
+            startingLineNumber = "338"
+            endingLineNumber = "338"
             landmarkName = "viewControllerDidDismiss(_:_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3918,38 +1902,6 @@
             endingLineNumber = "146"
             landmarkName = "noIdea(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C7BA86FF-0295-4C36-8785-A962E79402C8 - 208d0e9603681466"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.noIdea(balda_2.Opponent) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "C7BA86FF-0295-4C36-8785-A962E79402C8 - 208d0e96036814a8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.noIdea(balda_2.Opponent) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "504">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4030,260 +1982,6 @@
             endingLineNumber = "110"
             landmarkName = "move()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4D4E4FCD-B340-4E6C-A60C-DAB17D8F1E6B - d26b24cb1d9058df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.move() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "356">
-               </Location>
-               <Location
-                  uuid = "4D4E4FCD-B340-4E6C-A60C-DAB17D8F1E6B - d26b24cb1d9058df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.move() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "392">
-               </Location>
-               <Location
-                  uuid = "4D4E4FCD-B340-4E6C-A60C-DAB17D8F1E6B - d26b24cb1d9058df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.move() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "384">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F7EAE9CB-EBF7-40C2-9F8C-5392236B3AB1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "balda-2/GameViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "handlePanGesture(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F7EAE9CB-EBF7-40C2-9F8C-5392236B3AB1 - 12536a4927a8df92"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.handleSwipeDown(__C.UIPanGestureRecognizer) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "128">
-               </Location>
-               <Location
-                  uuid = "F7EAE9CB-EBF7-40C2-9F8C-5392236B3AB1 - 4df0bc2ca6b22631"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GameViewController.handlePanGesture(__C.UIPanGestureRecognizer) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "128">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D424B696-DE41-40E4-9BAA-A7E0DE35957D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "balda-2/GridView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
-            landmarkName = "handleLetterSelection(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D424B696-DE41-40E4-9BAA-A7E0DE35957D - a23975aab3f4e4fe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.handleLetterSelection(Swift.Character) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "206"
-                  endingLineNumber = "206"
-                  offsetFromSymbolStart = "632">
-               </Location>
-               <Location
-                  uuid = "D424B696-DE41-40E4-9BAA-A7E0DE35957D - a23975aab3f4e4fe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.handleLetterSelection(Swift.Character) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "206"
-                  endingLineNumber = "206"
-                  offsetFromSymbolStart = "376">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8BBEB441-55D6-44DC-8908-56F7A885FAE3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "balda-2/GridView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "415"
-            endingLineNumber = "415"
-            landmarkName = "showKeyboard(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8BBEB441-55D6-44DC-8908-56F7A885FAE3 - 443faa24865a973c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "422"
-                  endingLineNumber = "422"
-                  offsetFromSymbolStart = "4088">
-               </Location>
-               <Location
-                  uuid = "8BBEB441-55D6-44DC-8908-56F7A885FAE3 - 443faa24865a973c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.showKeyboard(balda_2.GridView.CustomUITextField) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "422"
-                  endingLineNumber = "422"
-                  offsetFromSymbolStart = "3884">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "62936718-0653-4640-A258-53E6346183B9"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "balda-2/GridView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "game"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "62936718-0653-4640-A258-53E6346183B9 - 9cfbe748cedca67e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.game.didset : Swift.Optional&lt;balda_2.Game&gt;"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "156"
-                  endingLineNumber = "156"
-                  offsetFromSymbolStart = "380">
-               </Location>
-               <Location
-                  uuid = "62936718-0653-4640-A258-53E6346183B9 - 9cfbe748cedca67e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.game.didset : Swift.Optional&lt;balda_2.Game&gt;"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "156"
-                  endingLineNumber = "156"
-                  offsetFromSymbolStart = "212">
-               </Location>
-               <Location
-                  uuid = "62936718-0653-4640-A258-53E6346183B9 - 9cfbe748cedca6fa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.GridView.game.didset : Swift.Optional&lt;balda_2.Game&gt;"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/GridView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "160"
-                  endingLineNumber = "160"
-                  offsetFromSymbolStart = "580">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4392,8 +2090,8 @@
             filePath = "balda-2/ScoreBoard.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "setPlayer(name:score:words:fails:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4440,8 +2138,8 @@
             filePath = "balda-2/LetterKeyboardView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "setupKeys()"
             landmarkType = "7">
          </BreakpointContent>
@@ -4456,8 +2154,8 @@
             filePath = "balda-2/LetterKeyboardView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "setupKeys()"
             landmarkType = "7">
          </BreakpointContent>
@@ -4472,42 +2170,10 @@
             filePath = "balda-2/LetterKeyboardView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "setupKeys()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6F669700-A2AD-4657-96CE-2BCCD019FA3B - 2d2082ce198c0122"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.setupKeys() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "1608">
-               </Location>
-               <Location
-                  uuid = "6F669700-A2AD-4657-96CE-2BCCD019FA3B - 2d2082ce198c02c3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.LetterKeyboardView.setupKeys() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/LetterKeyboardView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "1608">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4520,42 +2186,10 @@
             filePath = "balda-2/OvalTextLabel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "updateLabelVisibility()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "92C1609E-6569-4EC6-A57D-305652FFA4A1 - 5de0e8a87cd5f2c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.OvalLabel.updateLabelVisibility() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/OvalTextLabel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "388">
-               </Location>
-               <Location
-                  uuid = "92C1609E-6569-4EC6-A57D-305652FFA4A1 - 5de0e8a87cd5f2c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.OvalLabel.updateLabelVisibility() -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/OvalTextLabel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "84">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4600,8 +2234,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "262"
-            endingLineNumber = "262"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
             landmarkName = "updateL()"
             landmarkType = "7">
          </BreakpointContent>
@@ -4632,8 +2266,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "game"
             landmarkType = "24">
          </BreakpointContent>
@@ -4668,38 +2302,6 @@
             endingLineNumber = "181"
             landmarkName = "finishStep(_:_:_:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "63F8EEED-4237-42CC-874A-597F1D25EDA0 - e200ea24db23d8fa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.finishStep(balda_2.Opponent, Swift.Array&lt;(Swift.Int, Swift.Int)&gt;, Swift.String, Swift.Optional&lt;(Swift.Int, Swift.Int)&gt;) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "936">
-               </Location>
-               <Location
-                  uuid = "63F8EEED-4237-42CC-874A-597F1D25EDA0 - e200ea24db23d8fa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.finishStep(balda_2.Opponent, Swift.Array&lt;(Swift.Int, Swift.Int)&gt;, Swift.String, Swift.Optional&lt;(Swift.Int, Swift.Int)&gt;) -&gt; ()"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "1144">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4744,8 +2346,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
             landmarkName = "setVisibleValue(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4760,8 +2362,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
             landmarkName = "setVisibleValue(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4792,8 +2394,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "cellsToHighlight"
             landmarkType = "24">
          </BreakpointContent>
@@ -4808,8 +2410,8 @@
             filePath = "balda-2/GridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "highlightNextCell(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4824,57 +2426,442 @@
             filePath = "balda-2/Game.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "329"
-            endingLineNumber = "329"
+            startingLineNumber = "328"
+            endingLineNumber = "328"
             landmarkName = "__finishStep()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D5ECDF38-E2B5-470F-9B7E-0AC4DB345F58 - 30d900437c4241"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.__finishStep() -&gt; balda_2.Result"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "323"
-                  endingLineNumber = "323"
-                  offsetFromSymbolStart = "1968">
-               </Location>
-               <Location
-                  uuid = "D5ECDF38-E2B5-470F-9B7E-0AC4DB345F58 - 88049c32d63eedbf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Bool) -&gt; () in balda_2.Game.__finishStep() -&gt; balda_2.Result"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "323"
-                  endingLineNumber = "323"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  uuid = "D5ECDF38-E2B5-470F-9B7E-0AC4DB345F58 - 30d900437c4241"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "balda_2.Game.__finishStep() -&gt; balda_2.Result"
-                  moduleName = "balda-2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/poryadin.andrey/Desktop/snake/sleeper/sleeper/balda/balda-2/balda-2/balda-2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "323"
-                  endingLineNumber = "323"
-                  offsetFromSymbolStart = "1980">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C7CDF74-D1BB-4792-A196-396CA98EAAFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/ScoreBoard.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "setupViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9096A283-87B4-4CE5-A052-DBBC6F28FB1B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/ScoreBoard.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "setupViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C015EA79-7D2A-4734-B573-3B86A182271B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "initGrid()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "111BAA09-1A10-4591-BF85-8E5283C04872"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/GridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "getGridBottom(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92CB30B9-F6BB-44B7-A7C6-8B23EF9FE90C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/GridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "getGridBottom(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBE4BEA4-634D-4CF2-B5A8-1DF19050780F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/GridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
+            landmarkName = "updateL()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81A6CB25-39A8-4B39-BC87-3311260BBA71"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/GridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "268"
+            endingLineNumber = "268"
+            landmarkName = "updateL()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0462E219-2C29-4B82-B5A7-C5F8D7D3F9CF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
+            landmarkName = "showKeyboard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AEBE3430-F4D3-479A-A068-736029C0CDF9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "277"
+            endingLineNumber = "277"
+            landmarkName = "getGridBottom(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "928AA8AB-FEFE-48FC-A8B5-B41139D56786"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "280"
+            endingLineNumber = "280"
+            landmarkName = "getGridBottom(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E675551-F2BB-4F9A-82B5-981185FD1196"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E3E270F-A4FD-47C8-A00B-0C51C503B0C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/UIColor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "init?(hex:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E9FF375-FEC2-44A4-91A3-74A890DBED51"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/UIColor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "init?(hex:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CA387E7-1C52-483B-A4DB-7E7F39B3E910"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/UIColor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "init?(hex:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CDF23F9E-C434-4373-A3EB-BFC7900C2B1E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/OvalTextLabel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "setupLabel()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D22D67DB-DA0D-421C-9488-7317A882F2D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "304"
+            endingLineNumber = "304"
+            landmarkName = "initGrid()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8890293B-E857-4799-B13E-B91052910197"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/OvalTextLabel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "text"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6320CDA9-B43A-4F59-AE94-316AE899093D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/OvalTextLabel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "setupLabel()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84392AC6-A1E8-40F0-AE2E-D1E95F03FCD9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/GridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
+            landmarkName = "highLightCell(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E56FAAA9-778F-462A-8EB5-9DE17288F552"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/LetterKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "handleHover(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0021B44-874C-4909-8A7F-4E14B386A5B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/Score.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "setCurrentOne()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD3731D3-DBE5-4120-984D-FB309AA862F8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/Score.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
+            landmarkName = "setCurrent(_:_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "868666D0-D96A-452D-8ECC-985964775AD8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/Score.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
+            landmarkName = "setCurrentTwo()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4AA6A05-899E-4188-8A72-471D99CC5ED7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/Score.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "setCurrent(_:_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6EDC65CD-3351-4A6D-9F2E-159C11FA360C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/Score.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7B49AAB-FE7F-45CB-BB10-31C183EFD0ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/Score.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1863CA90-C972-41EA-9BF7-A38474AD2E8B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balda-2/Score.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

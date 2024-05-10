@@ -28,14 +28,25 @@ class ScoreBoardView: UIView {
         return self
     }
     
+    override var canBecomeFocused: Bool {
+            return false
+        }
     
     @objc private func closeButtonTapped() {
         removeFromSuperview()
     }
 
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
     init(frame: CGRect, info: Info) {
         super.init(frame: frame)
         
+        self.updateInfo(info)
+    }
+    
+    public func updateInfo(_ info: Info) {
         setupViews()
         
         player1View.setPlayer(name: info.opponentInfo1.name, score: info.opponentInfo1.score, words: info.opponentInfo1.words, fails: info.opponentInfo1.fails)
@@ -50,40 +61,22 @@ class ScoreBoardView: UIView {
         player1View = PlayerView()
         player2View = PlayerView()
         
+        player1View.frame = CGRect(x: 0, y: 0, width: frame.width/2, height: frame.height)
+        player2View.frame = CGRect(x: frame.width/2, y: 0, width: frame.width/2, height: frame.height)
+        
         addSubview(player1View)
         addSubview(player2View)
         addSubview(closeButton)
-
-        NSLayoutConstraint.activate([
-            player1View.leadingAnchor.constraint(equalTo: leadingAnchor),
-            player1View.topAnchor.constraint(equalTo: topAnchor),
-            player1View.bottomAnchor.constraint(equalTo: bottomAnchor),
-            player1View.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.5),
-
-            player2View.trailingAnchor.constraint(equalTo: trailingAnchor),
-            player2View.topAnchor.constraint(equalTo: topAnchor),
-            player2View.bottomAnchor.constraint(equalTo: bottomAnchor),
-            player2View.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.5),
-            
-            closeButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8), // Changed this line
-            closeButton.topAnchor.constraint(equalTo: topAnchor, constant: 8),
-            
-            
-        ])
-        
-
-        closeButton.translatesAutoresizingMaskIntoConstraints = false
-        player1View.translatesAutoresizingMaskIntoConstraints = false
-        player2View.translatesAutoresizingMaskIntoConstraints = false
         
     }
 }
 
 
 class PlayerView: UIView {
-    private let nameLabel = UILabel()
-    private let scoreLabel = UILabel()
+    //private let nameLabel = UILabel()
+    //private let scoreLabel = UILabel()
     private let wordsList = UITextView()
+    private let userButton = UIButton()
     
     init() {
         super.init(frame: .zero)
@@ -99,8 +92,8 @@ class PlayerView: UIView {
 
     
     func setPlayer(name: String, score: Int, words: [String], fails: [Int]) {
-        nameLabel.text = name
-        scoreLabel.text = "Score: \(score)"
+     //   nameLabel.text = name
+       // scoreLabel.text = "Score: \(score)"
         let attributedString = NSMutableAttributedString()
         for (i, word) in words.enumerated() {
             if fails.contains(i) {
@@ -135,22 +128,19 @@ class PlayerView: UIView {
     private func setupViews() {
     
     
-        nameLabel.font = .boldSystemFont(ofSize: 24)
-        scoreLabel.font = .systemFont(ofSize: 20)
+        userButton.setImage(UIImage(named: "skip"), for: .normal)
+        userButton.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         wordsList.font = .systemFont(ofSize: 20)
 
         
-        let stackView = UIStackView(arrangedSubviews: [nameLabel, scoreLabel, wordsList])
-        stackView.axis = .vertical
-        stackView.spacing = 8
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(stackView)
-        
-        NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: topAnchor, constant: 16),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-        ])
+        let stackView1 = UIStackView(arrangedSubviews: [/*nameLabel, scoreLabel, */wordsList])
+        stackView1.axis = .vertical
+        stackView1.spacing = 8
+        let stackView2 = UIStackView(arrangedSubviews: [userButton, wordsList])
+        stackView2.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        stackView2.axis = .horizontal
+        stackView2.spacing = 8
+        addSubview(userButton)
+
     }
 }

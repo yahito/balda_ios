@@ -50,10 +50,26 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "UIColor.init(hex:):UIColor.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "hexColor.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "CustomView.touchesCancelled(_:with:):CustomView.swift">
          <PersistentStrings>
             <PersistentString
                value = "touches.first">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameViewController.getGridBottom(_:):GameViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "4*_totalMargin + (Double(size) * _cellWidth)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -85,16 +101,24 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "GameViewController.initGame():GameViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "getGridBottom(gridState!.grid.count))">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "GridView.initBomb(_:):GridView.swift">
       </ContextState>
       <ContextState
          contextName = "GridView.init(frame:):GridView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "lettersCells">
+               value = "availableWidth">
             </PersistentString>
             <PersistentString
-               value = "availableWidth">
+               value = "lettersCells">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -124,14 +148,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "GameGridState.encode(to:):GameState.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "turn">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "closure #1 in Game.localInput(_:):Game.swift">
          <PersistentStrings>
             <PersistentString
@@ -143,13 +159,27 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "GameGridState.encode(to:):GameState.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "turn">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "GridView.updateL():GridView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "lettersCells[i][j].titleLabel?.text">
+               value = "cellRect.height">
             </PersistentString>
             <PersistentString
-               value = "lettersCells[i][j].titleLabel">
+               value = "cellRect">
+            </PersistentString>
+            <PersistentString
+               value = "cellRect.maxY">
+            </PersistentString>
+            <PersistentString
+               value = "totalMargin">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -158,6 +188,14 @@
          <PersistentStrings>
             <PersistentString
                value = "ress!.getWord()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OvalLabel.setupLabel():OvalTextLabel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "label. subviews">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -214,6 +252,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "GameViewController.initGrid():GameViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gridState!.grid.count">
+            </PersistentString>
+            <PersistentString
+               value = "gridView.getGridBottom(gridState!.grid.count)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "Game.skipStep():Game.swift">
          <PersistentStrings>
             <PersistentString
@@ -224,6 +273,32 @@
             </PersistentString>
             <PersistentString
                value = "state">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.getGridBottom(_:):GridView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "2*_totalMargin + (Double(size) * _cellWidth)">
+            </PersistentString>
+            <PersistentString
+               value = "cellWidth">
+            </PersistentString>
+            <PersistentString
+               value = "bounds.minY">
+            </PersistentString>
+            <PersistentString
+               value = "availableWidth">
+            </PersistentString>
+            <PersistentString
+               value = " bounds.width">
+            </PersistentString>
+            <PersistentString
+               value = "_totalMargin">
+            </PersistentString>
+            <PersistentString
+               value = "_cellWidth">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -243,6 +318,17 @@
             </PersistentString>
             <PersistentString
                value = "uncommited">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ScoreBoardView.setupViews():ScoreBoard.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame.width">
+            </PersistentString>
+            <PersistentString
+               value = "frame.height">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -323,10 +409,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "PlayerView.setupViews():ScoreBoard.swift">
+         contextName = "Game.finishStep(_:_:_:):Game.swift">
          <PersistentStrings>
             <PersistentString
-               value = "wordsList.text">
+               value = "currentOpponent">
+            </PersistentString>
+            <PersistentString
+               value = "opponent">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -339,13 +428,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "Game.finishStep(_:_:_:):Game.swift">
+         contextName = "PlayerView.setupViews():ScoreBoard.swift">
          <PersistentStrings>
             <PersistentString
-               value = "currentOpponent">
-            </PersistentString>
-            <PersistentString
-               value = "opponent">
+               value = "wordsList.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -16,9 +16,13 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     var gridState: GameGridState?
     var wordView: OvalLabel?
     let bottomPanel = BottomPanelView()
+    let scoreBoard = Score(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     var game: Game? = nil
+    var keyboardView: LetterKeyboardView?
     
     private var hintWindow: HintWindow?
+    
+
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
@@ -43,65 +47,140 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
 
     
-    @objc func handlePanGesture(_ recognizer: UIPanGestureRecognizer) {
-         let translation = recognizer.translation(in: view)
-         let percentage = translation.y / view.bounds.height
-
-
-         switch recognizer.state {
-         case .began:
-             hintWindow = HintWindow(frame: CGRect(x: 0, y: -150, width: 200, height: 100))
-             hintWindow!.show(in: self.view)
-             hintWindow!.configure(with: "Nothing found")
-             
-             DispatchQueue.global(qos: .background).async {
-                 var ress = self.search(5, 8)
-                 if ress != nil && ress!.getWord() != nil {
-                     let word = ress?.getWord()
-                     self.hintWindow!.finalText = word!
-                 } else {
-                     ress = self.search(2, 4)
-                     if ress != nil && ress!.getWord() != nil {
-                         let word = ress?.getWord()
-                         self.hintWindow!.finalText = word!
-                     }
-                 }
-             }
-             
-         case .changed:
-             let pos = min(0, -150 + translation.y);
-             hintWindow!.frame = CGRect(x: 0, y: pos, width: gridView!.frame.width, height: 100)
-             hintWindow!.updateVisibility(percentage: (pos + hintWindow!.frame.height)/100)
-         case .ended, .cancelled:
-             hintWindow!.hide()
-         default:
-             break
-         }
-     }
 
     fileprivate func initGame() {
         gridView = initGrid()
+        
         if gridState != nil {
             game = Game(gridState!, gridView!)
+            
+            if keyboardView == nil {
+                keyboardView = LetterKeyboardView(frame: CGRect(x: 0, y: 400, width: view.frame.width, height: view.frame.height/3),
+                                                  alphabet: game!.getAlphabet())
+            }
+            
             gridView!.game = game
             game!.move()
+            let hh = view.bounds.height - gridView!.frame.minY - gridView!.frame.height - 10;
+            let wordFrame = CGRect(x: 0, y: 500, width: view.bounds.width, height: view.bounds.height - 600 - 50)
+            
+            //if (scoreBoard == nil) {
+              //  scoreBoard = Score(frame: wordFrame)
+                view.addSubview(scoreBoard)
+            //}
+            //scoreBoard!.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+            //scoreBoard!.backgroundColor = .black
+
+            scoreBoard.setInfo(game!.getInfo())
+            
         }
+        view.addSubview(gridView!)
+        view.addSubview(keyboardView!)
+        
+        
+        bottomPanel.translatesAutoresizingMaskIntoConstraints = false
+        gridView!.translatesAutoresizingMaskIntoConstraints = false
+        scoreBoard.translatesAutoresizingMaskIntoConstraints = false
+        keyboardView!.translatesAutoresizingMaskIntoConstraints = false
+        wordView!.translatesAutoresizingMaskIntoConstraints = false
+        titleView.translatesAutoresizingMaskIntoConstraints = false
+        keyboardView!.isHidden = true
+        scoreBoard.isHidden = !keyboardView!.isHidden
+        
+        //scoreBoard!.isUserInteractionEnabled = true
+
+        
+    
+        let heightMultiplier: CGFloat = 0.5 // Start at 50% of the height
+        
+        NSLayoutConstraint.activate([
+        
+            
+            titleView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            
+            titleView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            
+                    // First view constraints
+            gridView!.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 5),
+            gridView!.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            gridView!.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            gridView!.heightAnchor.constraint(equalToConstant: CGFloat(getGridBottom(gridState!.grid.count))),
+            
+            ///   let wordFrame = CGRect(x: pos, y: getGridBottom(gridState!.grid.count) + 10, width: w, height: 50)
+            
+            wordView!.topAnchor.constraint(equalTo: gridView!.bottomAnchor, constant: 1),
+            wordView!.heightAnchor.constraint(equalToConstant: 40),
+            wordView!.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            wordView!.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.5),
+           // wordView!.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            
+            keyboardView!.topAnchor.constraint(equalTo: gridView!.bottomAnchor, constant: 10),
+            keyboardView!.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            keyboardView!.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+                                        
+                    // Second view constraints
+            scoreBoard.topAnchor.constraint(equalTo: wordView!.bottomAnchor, constant: 10),
+            scoreBoard.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            scoreBoard.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+                    
+                    // Third view constraints
+            //bottomPanel.topAnchor.constraint(equalTo: scoreBoard!.bottomAnchor),
+            bottomPanel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            bottomPanel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            bottomPanel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            
+            
+            scoreBoard.bottomAnchor.constraint(equalTo: bottomPanel.topAnchor),
+            keyboardView!.bottomAnchor.constraint(equalTo: bottomPanel.topAnchor),
+            
+
+                ])
+        
+        //view.bringSubviewToFront(bottomPanel)
     }
+    
+    // Calculate the width of the text view with an additional 10-point padding
+     private func calculateTextViewWidth() -> CGFloat {
+         let text = wordView!.text ?? ""
+         let padding: CGFloat = 10
+         
+         // Calculate the text width using the given font
+         let textWidth = (text as NSString).boundingRect(
+             with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: wordView!.frame.height),
+             options: .usesLineFragmentOrigin,
+             attributes: [.font: wordView!.label.font ?? UIFont.systemFont(ofSize: 16)],
+             context: nil
+         ).width
+         
+         // Add 10 points to the calculated width
+         return textWidth + padding
+     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
-        view.addGestureRecognizer(panRecognizer)
+        let backgroundImageView = UIImageView(frame: self.view.bounds)
+        backgroundImageView.image = UIImage(named: "back")
+        backgroundImageView.contentMode = .scaleAspectFill
+        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(backgroundImageView)
+        view.sendSubviewToBack(backgroundImageView)
+        
+        
+     //   let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
+       // view.addGestureRecognizer(panRecognizer)
         
         
         NotificationCenter.default.addObserver(self, selector: #selector(updateTextView(_:)), name: .opponentChanged, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(updateTextView(_:)), name: .gameFinished, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(updateWord(_:)), name: .wordChanged, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showKeyboard(_:)), name: .showKeyboard, object: nil)
         
         titleView.text = ""
-        titleView.textColor = .black
-     
+        titleView.textColor = UIColor(hex: "#DF5386")
+    
+
        
         bottomPanel.translatesAutoresizingMaskIntoConstraints = false
         // Add actions to buttons
@@ -111,8 +190,6 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         bottomPanel.undoSelectionButton.addTarget(self, action: #selector(undoSelectionPressed), for: .touchUpInside)
         
         
-        bottomPanel.scoreButton.addTarget(self, action: #selector(scoreButtonPressed), for: .touchUpInside)
-        
         bottomPanel.isUserInteractionEnabled = true
         
         if (gridView != nil) {
@@ -121,11 +198,17 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         initGame()
     
-        NSLayoutConstraint.activate([
+       NSLayoutConstraint.activate([
             bottomPanel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             bottomPanel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             bottomPanel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bottomPanel.heightAnchor.constraint(equalToConstant: 60) // or whatever height you want
+            bottomPanel.heightAnchor.constraint(equalToConstant: 60), // or whatever height you want
+            
+            
+            backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
         ])
     
 
@@ -135,6 +218,26 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         NotificationCenter.default.removeObserver(self, name: .opponentChanged, object: nil)
     }
     
+    @objc func showKeyboard(_ notification: Notification) {
+
+        
+        keyboardView!.backgroundColor = .clear
+        keyboardView!.isHidden = false
+        scoreBoard.isHidden = !keyboardView!.isHidden
+        
+        let x = notification.userInfo?["handler"] as? (Int, Int)
+        
+        let s: ((Character) -> Void) = { [weak self] letter in
+            self!.gridView!.handleLetterSelection(letter, x!)
+            
+            self!.keyboardView!.isHidden = true
+            self!.scoreBoard.isHidden = !self!.keyboardView!.isHidden
+        }
+        
+        
+        keyboardView!.letterTapped = s
+    }
+    
     @objc func updateWord(_ notification: Notification) {
         if let state = notification.userInfo?["word"] as? String {
             wordView?.text = state
@@ -142,8 +245,17 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     @objc func updateTextView(_ notification: Notification) {
+        
+        if (game != nil) {
+        scoreBoard.setInfo(game!.getInfo())
+        }
        if let state = notification.userInfo?["local"] as? Bool {
            titleView.text = state ? "Your turn" : "Wait"
+           if (state) {
+               scoreBoard.setCurrentOne()
+           } else {
+               scoreBoard.setCurrentTwo()
+           }
        }
         
         let state = notification.userInfo?["winner"] as? Game.GAME_RESULT;
@@ -160,28 +272,40 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         }
    }
     
+    
+    public func getGridBottom(_ size: Int) -> Double {
+        let _totalMargin = 10.0
+        let avW = view.bounds.width*0.9
+        let _cellWidth = avW / Double(size)
+        return 4.0*_totalMargin + (Double(size) * _cellWidth);
+    }
+    
+    
     func initGrid() -> GridView {
         let gridView = GridView(frame: self.view.bounds)
         gridView.backgroundColor = .clear
         gridView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        gridView.frame = CGRect(x: 0, y: view.bounds.height*0.10, width: view.bounds.width, height: view.bounds.height - 50)
+        gridView.frame = CGRect(x: 0, y: view.bounds.height*0.10, width: view.bounds.width, height: getGridBottom(gridState!.grid.count))
         titleView.frame = CGRect(x: 20, y: 10, width: view.bounds.width - 10, height: 100)
         
         view.addSubview(titleView)
-        view.addSubview(gridView)
         
         //bottomPanel.removeFromSuperview()
         view.addSubview(bottomPanel)
-        bottomPanel.frame = CGRect(x: 0, y: view.bounds.height - 50, width: view.bounds.width, height: 50)
+        //bottomPanel.frame = CGRect(x: 0, y: view.bounds.height - 50, width: view.bounds.width, height: 50)
         
         var w = view.bounds.width*0.5
         var pos = (view.bounds.width - w)/2
-        let wordFrame = CGRect(x: pos, y: gridView.frame.minY + gridView.frame.maxX + 10, width: w, height: 50)
+        
+        
+        let wordFrame = CGRect(x: pos, y: getGridBottom(gridState!.grid.count) + 10, width: w, height: 50)
         
         let wordView = OvalLabel(frame: wordFrame)
         view.addSubview(wordView)
         self.wordView = wordView
+        
+
         
         return gridView
     }
@@ -294,6 +418,10 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
 
     @objc func undoSelectionPressed() {
+        if (keyboardView != nil) {
+            keyboardView!.isHidden = true
+            scoreBoard.isHidden = !keyboardView!.isHidden
+        }
         game?.cancelSelection()
     }
     

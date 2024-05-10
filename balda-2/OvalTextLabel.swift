@@ -2,7 +2,7 @@ import UIKit
 
 class OvalLabel: UIView {
 
-    private var label: UILabel!
+    var label: UILabel!
 
     var text: String? {
         didSet {
@@ -23,23 +23,42 @@ class OvalLabel: UIView {
     private func setupLabel() {
         label = UILabel()
         label.textAlignment = .center
-        label.backgroundColor = .darkGray
-        label.textColor = .white
+        label.textColor = UIColor(hex: "#DF5386")
+        label.font = UIFont.boldSystemFont(ofSize: 25)
+        
+        let backgroundImageView = UIImageView(frame: self.bounds)
+        backgroundImageView.image = UIImage(named: "hint_back")
+        backgroundImageView.contentMode = .scaleToFill
+        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        addSubview(backgroundImageView)
+        sendSubviewToBack(backgroundImageView)
 
         addSubview(label)
 
         label.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
+          
+            backgroundImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            backgroundImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            backgroundImageView.topAnchor.constraint(equalTo: self.topAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            
             label.centerXAnchor.constraint(equalTo: centerXAnchor),
             label.centerYAnchor.constraint(equalTo: centerYAnchor),
             label.widthAnchor.constraint(equalTo: widthAnchor),
             label.heightAnchor.constraint(equalTo: heightAnchor)
         ])
+        
     }
 
     private func updateLabelVisibility() {
+        
         label.text = text
         isHidden = text?.isEmpty ?? true
+        setNeedsDisplay()
+        print(self)
     }
 
     override func layoutSubviews() {

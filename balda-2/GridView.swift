@@ -6,13 +6,14 @@ import CoreGraphics
 class GridView: UIView, CAAnimationDelegate {
     
     private let cellImage = UIImage(named: "cellImage")
-    private var selectedCell: (row: Int, column: Int)?
-    private var keyboardView: LetterKeyboardView?
+    //private var selectedCell: (row: Int, column: Int)?
     private var isUpdatingCells = false
     private var currentSelectedCells: [(Int, Int)] = []
     private var cellCallback: (Bool) -> Void = {w in}
     private var userSelection = false
     private var allowBombs = false
+    private var glowingCells: [UIView] = []
+    private var lettersCells: [[CustomUITextField]] = []
     
     
     private var allowLocalInput = false
@@ -30,6 +31,7 @@ class GridView: UIView, CAAnimationDelegate {
             k.layer.shadowColor = UIColor.clear.cgColor
             k.layer.shadowOpacity = 0
             k.layer.removeAllAnimations()
+            k.setBackgroundImage(UIImage(named: "grid_cell"), for: .normal)
         }
     }
     
@@ -53,9 +55,6 @@ class GridView: UIView, CAAnimationDelegate {
     
     @objc public func cancelSelection() {
         game!.resetStep()
-        if (keyboardView != nil) {
-            keyboardView!.removeFromSuperview()
-        }
         userSelection = false
         currentSelectedCells.removeAll()
         refreshAllCells()
@@ -157,10 +156,6 @@ class GridView: UIView, CAAnimationDelegate {
             
             cellWidth = min(availableWidth / Double(gridSize), availableHeight / Double(gridSize)) // Ensure square cells and fit within the view
             
-            if keyboardView == nil {
-                keyboardView = LetterKeyboardView(frame: CGRect(x: 0, y: 400, width: frame.width, height: frame.height/3),
-                                                  alphabet: game!.getAlphabet())
-            }
             updateL()
             setNeedsDisplay()
         }
@@ -198,16 +193,16 @@ class GridView: UIView, CAAnimationDelegate {
     }
 
     
-    func handleLetterSelection(_ letter: Character) {
-        if let cell = selectedCell {
+    func handleLetterSelection(_ letter: Character, _ cell: (Int, Int)) {
+      
             // Update the game state for the selected cell with the chosen letter.
-            game?.setLetter(cell.row, cell.column, letter)
-            setNeedsDisplay() // to redraw the grid
-        }
+        game?.setLetter(cell.0, cell.1, letter)
+        setNeedsDisplay() // to redraw the grid
         
-        if (keyboardView != nil) {
-            keyboardView!.removeFromSuperview()
-        }
+        
+        setVisibleValue(lettersCells[cell.0][cell.1], letter)
+        userSelection = true;
+        
     }
    
    @objc func handleTap(recognizer: UITapGestureRecognizer) {
@@ -215,8 +210,6 @@ class GridView: UIView, CAAnimationDelegate {
        
    }
     
-    private var glowingCells: [UIView] = []
-    private var lettersCells: [[CustomUITextField]] = []
     
     class CustomUITextField: UIButton {
         var customId: (Int, Int) = (0,0)
@@ -246,6 +239,12 @@ class GridView: UIView, CAAnimationDelegate {
         
     }
     
+    public func getGridBottom(_ size: Int) -> Double {
+        let _totalMargin = bounds.minY + bounds.width * 0.05
+        let _cellWidth = min(availableWidth / Double(size), availableHeight / Double(size))
+        return 4*_totalMargin + (Double(size) * _cellWidth);
+    }
+    
     private func updateL() {
         let b = getBomb()
         
@@ -265,9 +264,10 @@ class GridView: UIView, CAAnimationDelegate {
                     
                     let cellRect = CGRect(x: totalMargin + CGFloat(j) * cellWidth, y: totalMargin + CGFloat(i) * cellWidth, width: cellWidth, height: cellWidth)
                     
+                                
                     let textField = CustomUITextField(frame: cellRect) // Adjust width and height as necessary.
                   
-                
+                    
                     setVisibleValue(textField, letterChar)
                     
                     textField.backgroundColor = .clear
@@ -281,8 +281,8 @@ class GridView: UIView, CAAnimationDelegate {
                     
                     // Position textField in the center of glowView.
                     textField.titleLabel?.textAlignment = .center
-                    
-                    textField.titleLabel?.font = UIFont.systemFont(ofSize: 20);
+                    textField.setBackgroundImage(UIImage(named: "grid_cell"), for: .normal)
+                    textField.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40);
                     addSubview(textField)
                     
                     if (lettersCells.count <= i) {
@@ -314,6 +314,8 @@ class GridView: UIView, CAAnimationDelegate {
     }
     
     fileprivate func highLightCell(_ sender: GridView.CustomUITextField, _ color: CGColor) {
+        
+        sender.setBackgroundImage(UIImage(named: "selected_cell"), for: .normal)
         // Apply glow effect
         sender.layer.shadowColor = color;
         
@@ -356,7 +358,7 @@ class GridView: UIView, CAAnimationDelegate {
             return
         }
         
-        if !keyboardView!.isDescendant(of: self) {
+       // if !keyboardView!.isDescendant(of: self) {
             if (userSelection) {
                 
                
@@ -412,22 +414,14 @@ class GridView: UIView, CAAnimationDelegate {
             
             if (sender.candidate && sender.title(for: .normal)?.isEmpty ?? true) {
                 //keyboardView = LetterKeyboardView(frame: CGRect(x: 0, y: 400, width: frame.width, height: frame.height/3))
-                keyboardView!.backgroundColor = .clear
+              
                 
                 updateSelectedText2()
-                
-                
-                addSubview(keyboardView!)
-                selectedCell = (sender.customId.0, sender.customId.1)
-                
-                keyboardView!.letterTapped = { [weak self] letter in
-                    self?.handleLetterSelection(letter)
-                    
-                    self!.setVisibleValue(self!.lettersCells[sender.customId.0][sender.customId.1], letter)
-                    self?.userSelection = true;
-                }
+             //   selectedCell = (sender.customId.0, sender.customId.1)
+    
+                NotificationCenter.default.post(name: .showKeyboard, object: nil, userInfo: ["handler": sender.customId]);
             }
-        }
+      //  }
     }
     
     private var totalMargin = 0.0;

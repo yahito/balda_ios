@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+
+class ClosureWrapper {
+    let closure: (Character) -> Void
+    
+    init(_ closure: @escaping (Character) -> Void) {
+        self.closure = closure
+    }
+}

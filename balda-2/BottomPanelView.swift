@@ -16,7 +16,6 @@ class BottomPanelView: UIView {
     let nextGameButton = UIButton()
     let finishStepButton = UIButton()
     let undoSelectionButton = UIButton()
-    let scoreButton = UIButton()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,8 +28,15 @@ class BottomPanelView: UIView {
     }
 
     private func setupView() {
+        
+        let backgroundImageView = UIImageView(image: UIImage(named: "menu_back"))
+        backgroundImageView.contentMode = .scaleToFill
+        addSubview(backgroundImageView)
+        sendSubviewToBack(backgroundImageView)
+        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+        
         // Add and layout buttons
-        let stackView = UIStackView(arrangedSubviews: [skipButton, nextGameButton, finishStepButton, undoSelectionButton, scoreButton])
+        let stackView = UIStackView(arrangedSubviews: [skipButton, nextGameButton, finishStepButton, undoSelectionButton])
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
         stackView.spacing = 10
@@ -41,7 +47,13 @@ class BottomPanelView: UIView {
             stackView.topAnchor.constraint(equalTo: self.topAnchor),
             stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10)
+            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            
+            backgroundImageView.topAnchor.constraint(equalTo: self.topAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            backgroundImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            backgroundImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor)
+        
         ])
         
         let hover = UIHoverGestureRecognizer(target: self, action: #selector(handleHover(_:)))
@@ -49,13 +61,13 @@ class BottomPanelView: UIView {
         nextGameButton.addGestureRecognizer(hover)
         finishStepButton.addGestureRecognizer(hover)
         undoSelectionButton.addGestureRecognizer(hover)
-        scoreButton.addGestureRecognizer(hover)
+    
         
         skipButton.setImage(UIImage(named: "skip"), for: .normal)
         nextGameButton.setImage(UIImage(named: "new"), for: .normal)
         finishStepButton.setImage(UIImage(named: "finish"), for: .normal)
         undoSelectionButton.setImage(UIImage(named: "undo"), for: .normal)
-        scoreButton.setImage(UIImage(named: "score"), for: .normal)
+    
     }
     
     @objc func handleHover(_ recognizer: UIHoverGestureRecognizer) {

@@ -288,7 +288,6 @@ class Game {
         
         opponent.bomb = bomb
         opponent.incrementScore(increment: word.count)
-    
         
         allowUncommited = false
         uncommited = nil
@@ -431,4 +430,5 @@ extension Notification.Name {
     static let opponentChanged = Notification.Name("opponentChanged")
     static let gameFinished = Notification.Name("gameFinished")
     static let wordChanged = Notification.Name("wordChanged")
+    static let showKeyboard = Notification.Name("showKeyboard")
 }
