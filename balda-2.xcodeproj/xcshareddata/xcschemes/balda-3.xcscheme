@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5F23FBE42ABE257300417468"
-               BuildableName = "balda-2.app"
+               BuildableName = "Balda.app"
                BlueprintName = "balda-2"
                ReferencedContainer = "container:balda-2.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F23FBE42ABE257300417468"
-            BuildableName = "balda-2.app"
+            BuildableName = "Balda.app"
             BlueprintName = "balda-2"
             ReferencedContainer = "container:balda-2.xcodeproj">
          </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F23FBE42ABE257300417468"
-            BuildableName = "balda-2.app"
+            BuildableName = "Balda.app"
             BlueprintName = "balda-2"
             ReferencedContainer = "container:balda-2.xcodeproj">
          </BuildableReference>

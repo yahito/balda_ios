@@ -12,11 +12,32 @@ enum Level: String, Decodable, Encodable, CaseIterable {
     case EASY = "Easy"
     case MEDIUM = "Medium"
     case HARD = "Hard"
+    
+    var tag: String {
+     switch self {
+     case .EASY:
+         return "easy"
+     case .MEDIUM:
+         return "medium"
+     
+    case .HARD:
+        return "hard"
+    }
+ }
 }
 
 enum Lang: String, Decodable, Encodable, CaseIterable {
     case RUS = "Русский"
     case NL = "Nederlands"
+    
+    var languageCode: String {
+         switch self {
+         case .RUS:
+             return "ru"
+         case .NL:
+             return "nl"
+         }
+     }
 }
 
 enum Size: String, Decodable, Encodable, CaseIterable {
@@ -62,7 +83,7 @@ class Game {
             self.currentOpponent = self.opponent2
         }
         
-        NotificationCenter.default.post(name: .opponentChanged, object: nil, userInfo: ["local": currentOpponent is LocalOpponent])
+        NotificationCenter.default.post(name: .opponentChanged, object: nil, userInfo: ["local": currentOpponent is LocalOpponent, "lang": state.lang.languageCode])
     }
 
     
@@ -111,7 +132,7 @@ class Game {
             return
         }
         
-        NotificationCenter.default.post(name: .opponentChanged, object: nil, userInfo: ["local": currentOpponent is LocalOpponent])
+        NotificationCenter.default.post(name: .opponentChanged, object: nil, userInfo: ["local": currentOpponent is LocalOpponent, "lang": state.lang.languageCode])
         
         
         DispatchQueue.main.asyncAfter(deadline: .now()) {
@@ -162,7 +183,7 @@ class Game {
                 result = .LOCAL_LOOSE
             }
         }
-        NotificationCenter.default.post(name: .gameFinished, object: nil, userInfo: ["winner": result]);
+        NotificationCenter.default.post(name: .gameFinished, object: nil, userInfo: ["winner": result, "lang": state.lang.languageCode]);
     }
     
     fileprivate func getOpponentIndex(_ opponent: Opponent) -> Int {
@@ -308,7 +329,7 @@ class Game {
         let bomb = result.2
         
         
-        if (self.uncommited != nil) {
+        if (self.uncommited != nil && word != "") {
             if (!self.state.containsWord(word)) {
                 if (currentOpponent!.results(word)) {
                     if checkBomb(currentOpponent!, cells) == Result.BOMB {
@@ -334,6 +355,14 @@ class Game {
                     return Result.NONE
                 }
             } else {
+                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+                
+                view.setCellsToHighlight(view.getHiglightedCells().reversed(),
+                                         { bomb in
+                    self.cancelSelection()
+                    
+                }, false)
+                
                 return Result.DUPLICATE
             }
         }
@@ -366,10 +395,15 @@ class Game {
     
     func getInfo() -> Info {
         return Info(
-            OpponentInfo("opponent1", state.words1, state.score1, state.fail1),
-            OpponentInfo("opponent2", state.words2, state.score2, state.fail2)
+            OpponentInfo(state.name1, state.words1, state.score1, state.fail1),
+            OpponentInfo(state.name2, state.words2, state.score2, state.fail2)
         )
-
+    }
+    
+    func getRandomName() -> String {
+        let names = ["Молния", "Искра", "Тень", "Робот", "Стрела"]
+        let randomIndex = Int.random(in: 0..<names.count)
+        return names[randomIndex]
     }
     
     func cancelSelection() {

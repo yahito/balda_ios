@@ -12,8 +12,10 @@ class GridView: UIView, CAAnimationDelegate {
     private var cellCallback: (Bool) -> Void = {w in}
     private var userSelection = false
     private var allowBombs = false
-    private var glowingCells: [UIView] = []
     private var lettersCells: [[CustomUITextField]] = []
+    private let selImage = UIImage(named: "selected_cell")
+    private let gridImage = UIImage(named: "grid_cell")
+    private let redImage = UIImage(named: "grid_cell_red")
     
     
     private var allowLocalInput = false
@@ -33,6 +35,7 @@ class GridView: UIView, CAAnimationDelegate {
             k.layer.removeAllAnimations()
             k.setBackgroundImage(UIImage(named: "grid_cell"), for: .normal)
         }
+        k.userSelected = false
     }
     
     fileprivate func refreshAllCells() {
@@ -47,7 +50,9 @@ class GridView: UIView, CAAnimationDelegate {
         self.lettersCells.forEach {w in
             w.forEach{ k in
                 if (k.layer.shadowOpacity > 0) {
-                    highLightCell(k, UIColor.red.cgColor)
+                    
+                    
+                    highLightCell(k, UIColor.red.cgColor, redImage!)
                 }
             }
         }
@@ -90,7 +95,6 @@ class GridView: UIView, CAAnimationDelegate {
     private var cellsToHighlight: [(Int, Int)]? {
         didSet {
             if !isUpdatingCells {
-                //updateL()
                 updateSelectedText()
                 DispatchQueue.main.asyncAfter(deadline: .now()) {
                     self.highlightNextCell(self.forward)
@@ -136,10 +140,10 @@ class GridView: UIView, CAAnimationDelegate {
         }
         
         if (highlight) {
-            highLightCell(lettersCells[cell.0][cell.1], UIColor.blue.cgColor)
+            highLightCell(lettersCells[cell.0][cell.1], UIColor.blue.cgColor, selImage!)
         } else {
             var d = UIColor(red: 10000.0, green: 0, blue: 0, alpha: 100)
-            highLightCell(lettersCells[cell.0][cell.1], d.cgColor)
+            highLightCell(lettersCells[cell.0][cell.1], d.cgColor, redImage!)
         }
         
         self.cellsToHighlight?.removeFirst()
@@ -150,19 +154,24 @@ class GridView: UIView, CAAnimationDelegate {
         isUpdatingCells = false
     }
     
+    fileprivate func getCellWidth() -> Double {
+        let gridSize = game!.state.size.getGridSize()
+        
+        return min(getAvailableWidth() / Double(gridSize), getAvailableHeigh() / Double(gridSize))
+    }
+    
     var game: Game? {
-        didSet {
-            let gridSize = game!.state.size.getGridSize()
-            
-            cellWidth = min(availableWidth / Double(gridSize), availableHeight / Double(gridSize)) // Ensure square cells and fit within the view
-            
-            updateL()
+        didSet { // Ensure square cells and fit within the view
+            if getCellWidth() > 0 {
+                updateL()
+            }
             setNeedsDisplay()
         }
     }
     
     override func layoutSubviews() {
          super.layoutSubviews()
+         updateL()
         selectedTextLabel.frame = CGRect(x: 10, y: bounds.height - 40, width: bounds.width - 80, height: 30)
       /*  cancelButton.frame = CGRect(x: bounds.width - 70, y: bounds.height - 40, width: 60, height: 30)
         nextButton.frame = CGRect(x: bounds.width - 140, y: bounds.height - 40, width: 60, height: 30)
@@ -175,10 +184,8 @@ class GridView: UIView, CAAnimationDelegate {
         super.init(frame: frame)
         //let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(recognizer:)))
         //self.addGestureRecognizer(tap)
-        
-        totalMargin = bounds.width * 0.05
-        availableWidth = bounds.width - 2 * totalMargin
-        availableHeight = bounds.height - 2 * totalMargin
+                
+      
        
       /*
         addSubview(selectedTextLabel)
@@ -190,6 +197,18 @@ class GridView: UIView, CAAnimationDelegate {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func getMargin() -> Double {
+        return bounds.width * 0.05;
+    }
+    
+    private func getAvailableWidth() ->Double {
+        return bounds.width - 2 * getMargin();
+    }
+    
+    private func getAvailableHeigh() ->Double {
+        return bounds.height - 2 * getMargin();
     }
 
     
@@ -216,6 +235,7 @@ class GridView: UIView, CAAnimationDelegate {
         var candidate: Bool = false
         var ocupied: Bool = false
         var explode = false
+        var userSelected = false
     }
 
     
@@ -238,19 +258,15 @@ class GridView: UIView, CAAnimationDelegate {
         uiField.explode = false
         
     }
-    
-    public func getGridBottom(_ size: Int) -> Double {
-        let _totalMargin = bounds.minY + bounds.width * 0.05
-        let _cellWidth = min(availableWidth / Double(size), availableHeight / Double(size))
-        return 4*_totalMargin + (Double(size) * _cellWidth);
-    }
-    
+ 
     private func updateL() {
         let b = getBomb()
         
         if b != nil {
             self.lettersCells[b!.0][b!.1].setTitle(String(""), for: .normal)
         }
+        
+        let cellWidth = getCellWidth()
         
         if let game {
             for i in 0..<game.state.size.getGridSize() {
@@ -262,7 +278,7 @@ class GridView: UIView, CAAnimationDelegate {
                         continue
                     }
                     
-                    let cellRect = CGRect(x: totalMargin + CGFloat(j) * cellWidth, y: totalMargin + CGFloat(i) * cellWidth, width: cellWidth, height: cellWidth)
+                    let cellRect = CGRect(x: getMargin() + CGFloat(j) * cellWidth, y: getMargin() + CGFloat(i) * cellWidth, width: cellWidth, height: cellWidth)
                     
                                 
                     let textField = CustomUITextField(frame: cellRect) // Adjust width and height as necessary.
@@ -283,6 +299,10 @@ class GridView: UIView, CAAnimationDelegate {
                     textField.titleLabel?.textAlignment = .center
                     textField.setBackgroundImage(UIImage(named: "grid_cell"), for: .normal)
                     textField.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40);
+                    
+                    if UIDevice.current.userInterfaceIdiom == .pad {
+                        textField.titleLabel?.font = UIFont.boldSystemFont(ofSize: 50);
+                    }
                     addSubview(textField)
                     
                     if (lettersCells.count <= i) {
@@ -313,9 +333,9 @@ class GridView: UIView, CAAnimationDelegate {
      
     }
     
-    fileprivate func highLightCell(_ sender: GridView.CustomUITextField, _ color: CGColor) {
+    fileprivate func highLightCell(_ sender: GridView.CustomUITextField, _ color: CGColor, _ image: UIImage) {
         
-        sender.setBackgroundImage(UIImage(named: "selected_cell"), for: .normal)
+        sender.setBackgroundImage(image, for: .normal)
         // Apply glow effect
         sender.layer.shadowColor = color;
         
@@ -349,6 +369,7 @@ class GridView: UIView, CAAnimationDelegate {
     }
     
     @objc private func showKeyboard(_ sender: CustomUITextField) {
+        
         
         if !allowLocalInput {
             return
@@ -397,7 +418,7 @@ class GridView: UIView, CAAnimationDelegate {
                         currentSelectedCells.append(toAdd)
                         updateSelectedText2()
                         
-                        highLightCell(sender, UIColor.blue.cgColor)
+                        highLightCell(sender, UIColor.blue.cgColor, selImage!)
                     }
                     
                 
@@ -413,8 +434,15 @@ class GridView: UIView, CAAnimationDelegate {
         
             
             if (sender.candidate && sender.title(for: .normal)?.isEmpty ?? true) {
+                if cellsToHighlight != nil && cellsToHighlight!.count > 0 {
+                    return
+                }
                 //keyboardView = LetterKeyboardView(frame: CGRect(x: 0, y: 400, width: frame.width, height: frame.height/3))
-              
+                refreshAllCells()
+                
+                sender.userSelected = true
+                
+                highLightCell(sender, UIColor.blue.cgColor, redImage!)
                 
                 updateSelectedText2()
              //   selectedCell = (sender.customId.0, sender.customId.1)
@@ -423,11 +451,6 @@ class GridView: UIView, CAAnimationDelegate {
             }
       //  }
     }
-    
-    private var totalMargin = 0.0;
-    private var availableWidth = 0.0;
-    private var availableHeight = 0.0;
-    private var cellWidth = 0.0;
     
     func setBomb(_ b: (Int, Int)) {
         allowBombs = true
@@ -452,9 +475,9 @@ class GridView: UIView, CAAnimationDelegate {
    
     func locationForRowAndColumn(row: Int, column: Int) -> CGRect {
 
-    
-        let x = totalMargin + CGFloat(column) * cellWidth
-        let y = totalMargin + CGFloat(row) * cellWidth
+        let cellWidth = getCellWidth()
+        let x = getMargin() + CGFloat(column) * cellWidth
+        let y = getMargin() + CGFloat(row) * cellWidth
 
         return CGRect(x: x, y: y, width: cellWidth, height: cellWidth)
     }
@@ -484,12 +507,27 @@ class GridView: UIView, CAAnimationDelegate {
     }
     
     func returnSelectedValues() -> (String, [(Int, Int)], (Int, Int)?)? {
-        if (selectedTextLabel.text != nil) {
-            return (selectedTextLabel.text!, currentSelectedCells, getBomb())
+        
+        var ocupied = findOcupiedField();
+        
+        if (ocupied != nil && currentSelectedCells.contains(where: { $0 == ocupied!.customId})) {
+            if (selectedTextLabel.text != nil) {
+                return (selectedTextLabel.text!, currentSelectedCells, getBomb())
+            }
         }
 
         return nil
     }
+    
+    func findOcupiedField() -> CustomUITextField? {
+        for row in lettersCells {
+            if let selectedField = row.first(where: { $0.userSelected }) {
+                return selectedField
+            }
+        }
+        return nil // Return nil if no selected UITextField is found
+    }
+    
     
     private func addBurst(_ buttonField : GridView.CustomUITextField, _ cb: @escaping () -> Void) {
         if let fireLayer = buttonField.layer.sublayers?.first(where: { $0 is CAEmitterLayer }) as? CAEmitterLayer {

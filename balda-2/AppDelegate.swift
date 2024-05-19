@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //self.window = UIWindow(frame: UIScreen.main.bounds)
         
         if state == nil {
-            mainVC.gridState = GameGridState(Words.getRandomWord(Size.FIVE.getGridSize(), Level.MEDIUM, Lang.RUS)!, Size.FIVE, 0, Level.MEDIUM, Lang.RUS);
+            mainVC.gridState = GameGridState(Words.getRandomWord(Size.FIVE.getGridSize(), Level.MEDIUM, Lang.RUS)!,
+                                             Size.FIVE, 0, Level.MEDIUM, Lang.RUS, "Игрок");
         } else {
             mainVC.gridState = state
         }
@@ -53,11 +54,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func saveData() {
         let encoder = JSONEncoder()
         let data = mainVC.gridView?.game?.save(encoder)
-        UserDefaults.standard.set(data, forKey: "personData1")
+        UserDefaults.standard.set(data, forKey: "personData3")
     }
 
     func restoreData() {
-        if let savedData = UserDefaults.standard.data(forKey: "personData1") {
+        if let savedData = UserDefaults.standard.data(forKey: "personData3") {
             let decoder = JSONDecoder()
             do {
                 state = try decoder.decode(GameGridState.self, from: savedData)

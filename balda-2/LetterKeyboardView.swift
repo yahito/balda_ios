@@ -16,7 +16,7 @@ class LetterKeyboardView: UIView {
     var letterTapped: ((Character) -> Void)?
     
     private var didSetupKeys = false
-    private var alphabet: String?;
+    var alphabet: String?;
     private var size: Int = 6;
     var buttons: [UIButton] = []
 
@@ -57,8 +57,13 @@ class LetterKeyboardView: UIView {
         
         let buttonWidth: CGFloat = ((frame.width - totalMargin) / Double(size)) // assuming 5 letters per row
         
-        let fontSize: CGFloat = 40
-        let buttonFont = UIFont.boldSystemFont(ofSize: 40)
+        var fontSize: CGFloat = 38
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            fontSize = 50
+        }
+        
+        let buttonFont = UIFont.boldSystemFont(ofSize: fontSize)
         let buttonHeight = fontSize * 1.05
         
         

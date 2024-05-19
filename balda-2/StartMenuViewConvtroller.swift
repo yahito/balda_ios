@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol DismissalDelegate {
-    func viewControllerDidDismiss(_ level: Level, _ lang: Lang, _ size: Size)
+    func viewControllerDidDismiss(_ level: Level, _ lang: Lang, _ size: Size, _ name: String)
 }
 
 class StartMenuViewController: UIViewController {
@@ -20,12 +20,14 @@ class StartMenuViewController: UIViewController {
     var level: Level
     var lang: Lang
     var size: Size
+    let name: String
     
-    init(_ dismissDelegete: DismissalDelegate, _ level: Level, _ lang: Lang, _ size: Size) {
+    init(_ dismissDelegete: DismissalDelegate, _ level: Level, _ lang: Lang, _ size: Size, _ name: String) {
         self.dismissDelegete = dismissDelegete
         self.level = level
         self.lang = lang
         self.size = size
+        self.name = name
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -33,35 +35,57 @@ class StartMenuViewController: UIViewController {
         self.level = .EASY
         self.lang = .RUS
         self.size = .FIVE
+        self.name = ""
         super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white.withAlphaComponent(0.9)
+        
+        let backgroundImageView = UIImageView(image: UIImage(named: "back"))
+        backgroundImageView.contentMode = .scaleToFill
+        view.addSubview(backgroundImageView)
+        view.sendSubviewToBack(backgroundImageView)
+        
         setupDifficultyButtons()
     }
     
     fileprivate func style(_ selected: Bool, _ button: UIButton) {
         if selected {
-            button.backgroundColor = .blue
+            button.setBackgroundImage(UIImage(named: "start_menu_button_back"), for: .normal)
         } else {
-            button.backgroundColor = .lightGray
+            button.setBackgroundImage(UIImage(named: "start_menu_button_back_sel"), for: .normal)
         }
     }
     
-    fileprivate func createbutton(_ title: String, _ index: Int, _ tag: Int, _ selected: Bool) -> UIButton {
+    fileprivate func createbutton(_ title: String, _ index: Int, _ tag: Int, _ selected: Bool, _ big: Bool, _ bigShift: Int) -> UIButton {
         let button = UIButton()
+        
+        button.setBackgroundImage(UIImage(named: "start_menu_button_back_sel"), for: .normal)
+        
+        button.setBackgroundImage(UIImage(named: "start_menu_button_back"), for: .highlighted)
+        
         button.setTitle(title, for: .normal)
+        
+        var buttonHeight: CGFloat = 40
+        var buttonSpacing: CGFloat = 10
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .extraLargeTitle)
+            buttonHeight = 60
+            buttonSpacing = 10
+        } else {
+            button.titleLabel?.font = .boldSystemFont(ofSize: 20)
+        }
         style(selected, button)
         button.tag = tag
         button.addTarget(self, action: #selector(difficultySelected(_:)), for: .touchUpInside)
         
         // Set the frame or use Auto Layout
-        let buttonHeight: CGFloat = 40
-        let buttonSpacing: CGFloat = 10
-        let yOffset = view.bounds.height*0.15 + CGFloat(index) * (buttonHeight + buttonSpacing)
-        button.frame = CGRect(x: 20, y: yOffset, width: view.bounds.width - 40, height: buttonHeight)
+        
+        let yOffset = view.bounds.height*0.15 + CGFloat(index) * (buttonHeight + buttonSpacing) + CGFloat(bigShift)*buttonSpacing
+        button.frame = CGRect(x: 20, y: yOffset, width: view.bounds.width - 40, height:  big ? buttonHeight*1.2 : buttonHeight)
         
         view.addSubview(button)
         return button
@@ -69,29 +93,27 @@ class StartMenuViewController: UIViewController {
     
     func setupDifficultyButtons() {
         for (index, size) in Size.allCases.enumerated() {
-            sizeButtons.append(createbutton(size.rawValue, index, index, size == self.size))
+            sizeButtons.append(createbutton(size.rawValue, index, index, size == self.size, false, 0))
         }
         
         var shift = sizeButtons.count + 1
-        
-        let buttonTitles = ["Easy", "Medium", "Hard"]
-        
+    
         
         for (index, level) in Level.allCases.enumerated() {
-            levelButtons.append(createbutton(level.rawValue, index + shift, index, level == self.level))
+            levelButtons.append(createbutton(level.tag.translate(to: lang.languageCode), index + shift, index, level == self.level, false, 0))
         }
         
-        shift += buttonTitles.count + 1
+        shift += Level.allCases.count + 1
         
         for (index, lang) in Lang.allCases.enumerated() {
-            langButtons.append(createbutton(lang.rawValue, index + shift, index, lang == self.lang))
+            langButtons.append(createbutton(lang.rawValue, index + shift, index, lang == self.lang, false, 0))
         }
         
         shift += langButtons.count + 1
-        let controlTitles = ["Start", "Cancel"]
+        let controlTitles = ["start".translate(to: lang.languageCode), "cancel".translate(to: lang.languageCode)]
         
         for (index, title) in controlTitles.enumerated() {
-            createbutton(title, index + shift, index, false)
+            createbutton(title, index + shift, index, false, true, index)
         }
     }
     
@@ -119,7 +141,7 @@ class StartMenuViewController: UIViewController {
                 }
             }
         }  else if sender.tag == 0 {
-            self.dismissDelegete!.viewControllerDidDismiss(level, lang, size)
+            self.dismissDelegete!.viewControllerDidDismiss(level, lang, size, name)
             dismiss(animated: true)
         } else {
             dismiss(animated: true)

@@ -54,7 +54,7 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         if gridState != nil {
             game = Game(gridState!, gridView!)
             
-            if keyboardView == nil {
+            if (keyboardView == nil || keyboardView?.alphabet != game!.getAlphabet()) {
                 keyboardView = LetterKeyboardView(frame: CGRect(x: 0, y: 400, width: view.frame.width, height: view.frame.height/3),
                                                   alphabet: game!.getAlphabet())
             }
@@ -101,21 +101,21 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             titleView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
             
-                    // First view constraints
+            // First view constraints
             gridView!.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 5),
-            gridView!.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            gridView!.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            gridView!.centerXAnchor.constraint(equalTo:  view.safeAreaLayoutGuide.centerXAnchor),
+            gridView!.widthAnchor.constraint(equalTo: gridView!.heightAnchor),
             gridView!.heightAnchor.constraint(equalToConstant: CGFloat(getGridBottom(gridState!.grid.count))),
             
             ///   let wordFrame = CGRect(x: pos, y: getGridBottom(gridState!.grid.count) + 10, width: w, height: 50)
             
             wordView!.topAnchor.constraint(equalTo: gridView!.bottomAnchor, constant: 1),
-            wordView!.heightAnchor.constraint(equalToConstant: 40),
+            wordView!.heightAnchor.constraint(equalToConstant: UIDevice.current.userInterfaceIdiom == .pad ? 55: 40),
             wordView!.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             wordView!.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.5),
            // wordView!.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             
-            keyboardView!.topAnchor.constraint(equalTo: gridView!.bottomAnchor, constant: 10),
+            keyboardView!.topAnchor.constraint(equalTo: gridView!.bottomAnchor, constant: 0),
             keyboardView!.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             keyboardView!.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
                                         
@@ -179,8 +179,12 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         titleView.text = ""
         titleView.textColor = UIColor(hex: "#DF5386")
-    
-
+            
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            titleView.font = UIFont.preferredFont(forTextStyle: .extraLargeTitle)
+        } else {
+            titleView.font = UIFont.preferredFont(forTextStyle: .title3)
+        }
        
         bottomPanel.translatesAutoresizingMaskIntoConstraints = false
         // Add actions to buttons
@@ -247,10 +251,17 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @objc func updateTextView(_ notification: Notification) {
         
         if (game != nil) {
-        scoreBoard.setInfo(game!.getInfo())
-        }
+            scoreBoard.setInfo(game!.getInfo())
+        }        
+        
        if let state = notification.userInfo?["local"] as? Bool {
-           titleView.text = state ? "Your turn" : "Wait"
+                            
+           if (state) {
+               titleView.text = "your_turn".translate(to: notification.userInfo?["lang"] as? String ?? "en")
+           } else {
+               titleView.text = "wait".translate(to: notification.userInfo?["lang"] as? String ?? "en")
+           }
+           
            if (state) {
                scoreBoard.setCurrentOne()
            } else {
@@ -263,11 +274,11 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         if (state != nil){
             switch(state!) {
             case .TIE:
-                titleView.text = "It's a tie"
+                titleView.text = "tie".translate(to: notification.userInfo?["lang"] as? String ?? "en")
             case .LOCAL_LOOSE:
-                titleView.text = "You are defeated"
+                titleView.text = "def".translate(to: notification.userInfo?["lang"] as? String ?? "en")
             case .LOCAL_WIN:
-                titleView.text = "You win"
+                titleView.text = "win".translate(to: notification.userInfo?["lang"] as? String ?? "en")
             }
         }
    }
@@ -275,18 +286,25 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     public func getGridBottom(_ size: Int) -> Double {
         let _totalMargin = 10.0
-        let avW = view.bounds.width*0.9
+        let avW = view.bounds.width*0.95
         let _cellWidth = avW / Double(size)
-        return 4.0*_totalMargin + (Double(size) * _cellWidth);
+        
+        
+        let res = 4.0*_totalMargin + (Double(size) * _cellWidth);
+        
+        if res > view.bounds.height*0.6 {
+            return view.bounds.height*0.6
+        }
+        return res;
     }
     
     
     func initGrid() -> GridView {
-        let gridView = GridView(frame: self.view.bounds)
+        let gridView = GridView()
         gridView.backgroundColor = .clear
         gridView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        gridView.frame = CGRect(x: 0, y: view.bounds.height*0.10, width: view.bounds.width, height: getGridBottom(gridState!.grid.count))
+        //gridView.frame = CGRect(x: 0, y: view.bounds.height*0.10, width: view.bounds.width, height: getGridBottom(gridState!.grid.count))
         titleView.frame = CGRect(x: 20, y: 10, width: view.bounds.width - 10, height: 100)
         
         view.addSubview(titleView)
@@ -302,6 +320,7 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         let wordFrame = CGRect(x: pos, y: getGridBottom(gridState!.grid.count) + 10, width: w, height: 50)
         
         let wordView = OvalLabel(frame: wordFrame)
+            
         view.addSubview(wordView)
         self.wordView = wordView
         
@@ -330,18 +349,19 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     @objc func skipStepPressed() {
+        undoSelectionPressed()
         self.game!.resetAndSkipStep()
     }
     
-    func viewControllerDidDismiss(_ level: Level, _ lang: Lang, _ size: Size) {
+    func viewControllerDidDismiss(_ level: Level, _ lang: Lang, _ size: Size, _ name: String) {
         self.gridView?.removeFromSuperview()
-        self.gridState = GameGridState(Words.getRandomWord(size.getGridSize(), Level.HARD, lang)!, size, 0, level, lang);
+        self.gridState = GameGridState(Words.getRandomWord(size.getGridSize(), Level.HARD, lang)!, size, 0, level, lang, name);
         self.wordView?.removeFromSuperview()
         self.initGame();
     }
 
     @objc func nextGamePressed() {
-        let menuVC = StartMenuViewController(self, game!.state.level, game!.state.lang, game!.state.size)
+        let menuVC = StartMenuViewController(self, game!.state.level, game!.state.lang, game!.state.size, game!.state.name1)
         
         menuVC.modalPresentationStyle = .overCurrentContext
         menuVC.modalTransitionStyle = .coverVertical
@@ -375,6 +395,8 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
      }
 
     @objc func finishStepPressed() {
+        var word = gridView!.returnSelectedValues()
+        
         let res = game?.__finishStep()
         if (res != nil) {
             if res == Result.NOT_FOUND {
@@ -402,17 +424,11 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
                 
                 self.present(alertController, animated: true, completion: nil)
             } else if res == Result.DUPLICATE {
-                let alertController = UIAlertController(title: "Confirmation",
-                                                        message: "Duplicate",
-                                                        preferredStyle: .alert)
                 
-                let yesAction = UIAlertAction(title: "Ok", style: .default) { (action) in
-                    
+                if (word != nil) {
+                    scoreBoard.highlightWord(word!.0)
                 }
-                
-                alertController.addAction(yesAction)
-                
-                self.present(alertController, animated: true, completion: nil)
+             
             }
         }
     }

@@ -22,6 +22,7 @@
 		5F3294902BE7B379006DF3D1 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F32948F2BE7B379006DF3D1 /* Wrapper.swift */; };
 		5F34A72D2B1368F800CFFA3D /* OvalTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A72C2B1368F800CFFA3D /* OvalTextLabel.swift */; };
 		5F3946AC2AE9924700C8C648 /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3946AB2AE9924700C8C648 /* ScoreBoard.swift */; };
+		5F5ABE552BF0FD8E00CC4688 /* balda.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5F5ABE542BF0FD8E00CC4688 /* balda.xcstrings */; };
 		5F967F092AF6E7FD00F49502 /* StartMenuViewConvtroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F967F082AF6E7FD00F49502 /* StartMenuViewConvtroller.swift */; };
 		5F967F0B2B00CD5200F49502 /* HintWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F967F0A2B00CD5200F49502 /* HintWindow.swift */; };
 		5FA8D4EA2AD0B52D0003C97A /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8D4E92AD0B52D0003C97A /* GameState.swift */; };
@@ -47,6 +48,7 @@
 		5FF797022B00F30B00D8437D /* _234456Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF797012B00F30B00D8437D /* _234456Tests.swift */; };
 		5FF7970C2B00F30B00D8437D /* _234456UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF7970B2B00F30B00D8437D /* _234456UITests.swift */; };
 		5FF7970E2B00F30B00D8437D /* _234456UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF7970D2B00F30B00D8437D /* _234456UITestsLaunchTests.swift */; };
+		5FFC5A5B2BF884F700FF4DB4 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFC5A5A2BF884F700FF4DB4 /* Localized.swift */; };
 		5FFCD0B02BED145400031A77 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCD0AF2BED145400031A77 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,7 +84,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F23FBE52ABE257300417468 /* balda-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "balda-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F23FBE52ABE257300417468 /* Balda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Balda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F23FBE82ABE257300417468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F23FBEA2ABE257300417468 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		5F23FBEC2ABE257300417468 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -100,6 +102,8 @@
 		5F32948F2BE7B379006DF3D1 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
 		5F34A72C2B1368F800CFFA3D /* OvalTextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalTextLabel.swift; sourceTree = "<group>"; };
 		5F3946AB2AE9924700C8C648 /* ScoreBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
+		5F5ABE542BF0FD8E00CC4688 /* balda.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = balda.xcstrings; sourceTree = "<group>"; };
+		5F5ABE562BF1033700CC4688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5F967F082AF6E7FD00F49502 /* StartMenuViewConvtroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuViewConvtroller.swift; sourceTree = "<group>"; };
 		5F967F0A2B00CD5200F49502 /* HintWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintWindow.swift; sourceTree = "<group>"; };
 		5FA8D4E92AD0B52D0003C97A /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 		5FF797072B00F30B00D8437D /* 1234456UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1234456UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF7970B2B00F30B00D8437D /* _234456UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _234456UITests.swift; sourceTree = "<group>"; };
 		5FF7970D2B00F30B00D8437D /* _234456UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _234456UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FFC5A5A2BF884F700FF4DB4 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		5FFCD0AF2BED145400031A77 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +198,7 @@
 		5F23FBE62ABE257300417468 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F23FBE52ABE257300417468 /* balda-2.app */,
+				5F23FBE52ABE257300417468 /* Balda.app */,
 				5F23FBFE2ABE257400417468 /* balda-2Tests.xctest */,
 				5F23FC082ABE257400417468 /* balda-2UITests.xctest */,
 				5FF796E52B00F30900D8437D /* 1234456.app */,
@@ -206,6 +211,8 @@
 		5F23FBE72ABE257300417468 /* balda-2 */ = {
 			isa = PBXGroup;
 			children = (
+				5F5ABE562BF1033700CC4688 /* Info.plist */,
+				5F5ABE542BF0FD8E00CC4688 /* balda.xcstrings */,
 				5F23FBE82ABE257300417468 /* AppDelegate.swift */,
 				5F23FBEA2ABE257300417468 /* GameScene.sks */,
 				5F23FBEC2ABE257300417468 /* Actions.sks */,
@@ -233,6 +240,7 @@
 				5FF6D5862BDE4C0800E160E9 /* Score.swift */,
 				5F32948F2BE7B379006DF3D1 /* Wrapper.swift */,
 				5FFCD0AF2BED145400031A77 /* UIColor.swift */,
+				5FFC5A5A2BF884F700FF4DB4 /* Localized.swift */,
 			);
 			path = "balda-2";
 			sourceTree = "<group>";
@@ -303,7 +311,7 @@
 			);
 			name = "balda-2";
 			productName = "balda-2";
-			productReference = 5F23FBE52ABE257300417468 /* balda-2.app */;
+			productReference = 5F23FBE52ABE257300417468 /* Balda.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5F23FBFD2ABE257400417468 /* balda-2Tests */ = {
@@ -436,6 +444,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				de,
 			);
 			mainGroup = 5F23FBDC2ABE257300417468;
 			productRefGroup = 5F23FBE62ABE257300417468 /* Products */;
@@ -461,6 +471,7 @@
 				5F23FBEB2ABE257300417468 /* GameScene.sks in Resources */,
 				5F23FBF62ABE257400417468 /* Assets.xcassets in Resources */,
 				5F23FBF92ABE257400417468 /* LaunchScreen.storyboard in Resources */,
+				5F5ABE552BF0FD8E00CC4688 /* balda.xcstrings in Resources */,
 				5F23FBED2ABE257300417468 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +544,7 @@
 				5F967F0B2B00CD5200F49502 /* HintWindow.swift in Sources */,
 				5FC87BEF2ABF7C2200C9D0AC /* GridView.swift in Sources */,
 				5F23FBE92ABE257300417468 /* AppDelegate.swift in Sources */,
+				5FFC5A5B2BF884F700FF4DB4 /* Localized.swift in Sources */,
 				5F3946AC2AE9924700C8C648 /* ScoreBoard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -768,13 +780,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XRK5J4A7KJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "balda-2/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -782,7 +796,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yahito.balda-2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Balda;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -801,13 +815,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XRK5J4A7KJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "balda-2/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -815,7 +831,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yahito.balda-2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Balda;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

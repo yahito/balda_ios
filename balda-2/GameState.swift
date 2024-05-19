@@ -23,8 +23,10 @@ class GameGridState: Codable {
     var noIdea1: Bool = false
     var noIdea2: Bool = false
     var size: Size
+    var name1: String
+    var name2: String
 
-    init(_ str: String, _ size: Size, _ turn: Int, _ level: Level, _ lang: Lang) {
+    init(_ str: String, _ size: Size, _ turn: Int, _ level: Level, _ lang: Lang, _ name: String) {
         words.append(str)
         
         let gridSize = size.getGridSize()
@@ -43,6 +45,14 @@ class GameGridState: Codable {
         self.level = level
         self.lang = lang
         self.size = size
+        self.name2 = GameGridState.getRandomName()
+        self.name1 = name
+    }
+    
+    private static func getRandomName() -> String {
+        let names = ["Молния", "Искра", "Тень", "Робот", "Стрела"]
+        let randomIndex = Int.random(in: 0..<names.count)
+        return names[randomIndex]
     }
     
     func addWord(_ word: String, _ opponentId: Int, _ fail: Bool) {
@@ -106,6 +116,10 @@ class GameGridState: Codable {
         fail2 = try container.decode([Int].self, forKey: .fail2)
         
         size = try container.decode(Size.self, forKey: .size)
+        
+        name2 = try container.decode(String.self, forKey: .name2)
+        
+        name1 = try container.decode(String.self, forKey: .name1)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -138,6 +152,10 @@ class GameGridState: Codable {
         try container.encode(fail2, forKey: .fail2)
         
         try container.encode(size, forKey: .size)
+        
+        try container.encode(name2, forKey: .name2)
+        
+        try container.encode(name1, forKey: .name1)
 
     }
     
@@ -166,5 +184,7 @@ class GameGridState: Codable {
          case fail1
          case fail2
          case size
+         case name1
+         case name2
      }
 }

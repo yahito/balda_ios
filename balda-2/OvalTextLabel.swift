@@ -26,6 +26,10 @@ class OvalLabel: UIView {
         label.textColor = UIColor(hex: "#DF5386")
         label.font = UIFont.boldSystemFont(ofSize: 25)
         
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            label.font = UIFont.boldSystemFont(ofSize: 35)
+        }
+        
         let backgroundImageView = UIImageView(frame: self.bounds)
         backgroundImageView.image = UIImage(named: "hint_back")
         backgroundImageView.contentMode = .scaleToFill

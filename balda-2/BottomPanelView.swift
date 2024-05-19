@@ -63,10 +63,10 @@ class BottomPanelView: UIView {
         undoSelectionButton.addGestureRecognizer(hover)
     
         
-        skipButton.setImage(UIImage(named: "skip"), for: .normal)
-        nextGameButton.setImage(UIImage(named: "new"), for: .normal)
-        finishStepButton.setImage(UIImage(named: "finish"), for: .normal)
-        undoSelectionButton.setImage(UIImage(named: "undo"), for: .normal)
+        skipButton.setImage(UIImage(named: "shrug"), for: .normal)
+        nextGameButton.setImage(UIImage(named: "new_game"), for: .normal)
+        finishStepButton.setImage(UIImage(named: "done"), for: .normal)
+        undoSelectionButton.setImage(UIImage(named: "renew"), for: .normal)
     
     }
     
