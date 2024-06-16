@@ -25,8 +25,12 @@ class GameGridState: Codable {
     var size: Size
     var name1: String
     var name2: String
+    var block: Bool = false
+    
+    var userPic1 = UserPic.allCases[Int.random(in: 0..<UserPic.allCases.count)]
+    var userPic2 = UserPic.allCases[Int.random(in: 0..<UserPic.allCases.count)]
 
-    init(_ str: String, _ size: Size, _ turn: Int, _ level: Level, _ lang: Lang, _ name: String) {
+    init(_ str: String, _ size: Size, _ turn: Int, _ level: Level, _ lang: Lang, _ name: String, _ pic: UserPic) {
         words.append(str)
         
         let gridSize = size.getGridSize()
@@ -47,6 +51,18 @@ class GameGridState: Codable {
         self.size = size
         self.name2 = GameGridState.getRandomName()
         self.name1 = name
+        self.userPic1 = pic
+        self.userPic2 = getOtherPic(userPic1)
+    }
+    
+    func getOtherPic(_ pic: UserPic) -> UserPic {
+        var newUserPic: UserPic?
+        
+        while (newUserPic == nil || newUserPic == pic) {
+            newUserPic = UserPic.allCases[Int.random(in: 0..<UserPic.allCases.count)]
+        }
+        
+        return newUserPic!
     }
     
     private static func getRandomName() -> String {
@@ -120,6 +136,10 @@ class GameGridState: Codable {
         name2 = try container.decode(String.self, forKey: .name2)
         
         name1 = try container.decode(String.self, forKey: .name1)
+        
+        userPic1 = try container.decode(UserPic.self, forKey: .userPic1)
+        
+        userPic2 = try container.decode(UserPic.self, forKey: .userPic2)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -156,6 +176,9 @@ class GameGridState: Codable {
         try container.encode(name2, forKey: .name2)
         
         try container.encode(name1, forKey: .name1)
+        
+        try container.encode(userPic1, forKey: .userPic1)
+        try container.encode(userPic2, forKey: .userPic2)
 
     }
     
@@ -186,5 +209,7 @@ class GameGridState: Codable {
          case size
          case name1
          case name2
+         case userPic1
+         case userPic2
      }
 }

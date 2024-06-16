@@ -2,8 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,17 +13,33 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="OL2-sF-zEf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Rjo-RH-3WE">
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="U9S-12-82S">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logod" translatesAutoresizingMaskIntoConstraints="NO" id="LjJ-LV-h0V">
+                                <rect key="frame" x="121.33333333333333" y="351" width="150.33333333333343" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="TYP-Ii-6UC"/>
+                                    <constraint firstAttribute="width" secondItem="LjJ-LV-h0V" secondAttribute="height" multiplier="302:301" id="px7-AT-yTQ"/>
+                                    <constraint firstAttribute="height" constant="150" id="qYo-7Q-iLX"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="tDV-nh-Nmy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U9S-12-82S" firstAttribute="leading" secondItem="tDV-nh-Nmy" secondAttribute="leading" id="CyC-nu-Udf"/>
+                            <constraint firstItem="LjJ-LV-h0V" firstAttribute="centerY" secondItem="OL2-sF-zEf" secondAttribute="centerY" id="LKa-ch-cZA"/>
+                            <constraint firstItem="LjJ-LV-h0V" firstAttribute="centerX" secondItem="OL2-sF-zEf" secondAttribute="centerX" id="OoU-PH-IKo"/>
+                            <constraint firstAttribute="bottom" secondItem="U9S-12-82S" secondAttribute="bottom" id="fug-XN-5ae"/>
+                            <constraint firstItem="U9S-12-82S" firstAttribute="top" secondItem="OL2-sF-zEf" secondAttribute="top" id="owo-mk-66Y"/>
+                            <constraint firstItem="U9S-12-82S" firstAttribute="trailing" secondItem="tDV-nh-Nmy" secondAttribute="trailing" id="yvY-Ho-jnc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -32,7 +48,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash" width="860" height="1864"/>
+        <image name="back" width="860" height="1864"/>
+        <image name="logod" width="302" height="301"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

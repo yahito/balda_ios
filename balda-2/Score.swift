@@ -25,6 +25,15 @@ class Score: UIView, UITableViewDelegate, UITableViewDataSource {
     private let divider = UIView()
     private let horizontalLine = UIView()
     private let verticalLine = UIView()
+    
+    private var stackOne: UIStackView?
+    private var stackTwo: UIStackView?
+    
+    var onUserPicChange: () -> Void = {}
+    
+    @objc private func userViewTapped() {
+        onUserPicChange()
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -87,6 +96,8 @@ class Score: UIView, UITableViewDelegate, UITableViewDataSource {
         
         playerOneWordsTableView.reloadData()
         playerTwoWordsTableView.reloadData()
+        
+        setupViews()
     }
     
     private func setupViews() {
@@ -111,85 +122,77 @@ class Score: UIView, UITableViewDelegate, UITableViewDataSource {
         playerOneWordsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "wordCell")
         playerTwoWordsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "wordCell")
         
+        stackOne = UIStackView(arrangedSubviews: [playerOneImageView, playerOneLabel, playerOneScoreLabel])
+        stackOne!.axis = .vertical
+        stackOne!.alignment = .center
         
+        stackTwo = UIStackView(arrangedSubviews: [playerTwoImageView, playerTwoLabel, playerTwoScoreLabel])
+        stackTwo!.axis = .vertical
+        stackTwo!.alignment = .center
         
         // Add subviews
-        addSubviews(playerOneImageView, playerTwoImageView, playerOneLabel, playerTwoLabel, playerOneScoreLabel, playerTwoScoreLabel, playerOneWordsTableView, playerTwoWordsTableView, divider, horizontalLine, verticalLine)
+        addSubviews(playerOneWordsTableView, playerTwoWordsTableView, divider, horizontalLine, verticalLine, stackTwo!, stackOne!)
+                
+                     
+        if playerOneImageView.gestureRecognizers?.count ?? 0 == 0 {
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(userViewTapped))
+            tapGesture.numberOfTapsRequired = 2
+            playerOneImageView.addGestureRecognizer(tapGesture)
+            playerOneImageView.isUserInteractionEnabled = true
+        }
         
         // Layout
         layoutViews()
     }
     
+    
     private func layoutViews() {
-
-        playerOneImageView.image = UIImage(named: "av_man")
-        playerTwoImageView.image = UIImage(named: "av_woman")
+                
+        let iconSize = UIScreen.main.bounds.width*0.15
         
-        let imageLeft = playerOneImageView.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: (UIScreen.main.bounds.width * 0.1));
-        imageLeft.priority = .defaultLow
-        
-        let imageRight = playerTwoImageView.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -(UIScreen.main.bounds.width * 0.1))
-        imageRight.priority = .defaultLow
-        
-        let xxx = playerOneWordsTableView.leftAnchor.constraint(equalTo: playerOneImageView.rightAnchor, constant: 0)
-        xxx.priority = .defaultLow
+        if info != nil {
+            var resW = iconSize
+            var resH = iconSize
             
-        
-        let xxx2 = playerTwoWordsTableView.rightAnchor.constraint(equalTo: playerTwoImageView.leftAnchor, constant: 0)
-        xxx2.priority = .defaultLow
-        
+            if playerTwoImageView.image != nil {
+                resW = playerTwoImageView.image!.size.width
+                resH = playerTwoImageView.image!.size.height
+            }
+            
+            playerTwoImageView.image = UIImage(named: info!.opponentInfo2.userPic.rawValue.lowercased())?.resized(to: CGSize(width: resW, height: resH))
+            
+            playerOneImageView.image = UIImage(named: info!.opponentInfo1.userPic.rawValue.lowercased())?.resized(to: CGSize(width: resW, height: resH))
+            
+            playerTwoImageView.layer.cornerRadius = playerTwoImageView.image!.size.width / 2.0
+            playerOneImageView.layer.cornerRadius = playerOneImageView.image!.size.width / 2.0
+        }
         
         NSLayoutConstraint.activate([
                     // First view constraints
-            playerOneImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 15),
-            imageLeft,
-            
-            playerOneImageView.widthAnchor.constraint(equalToConstant: 60),
-            playerOneImageView.heightAnchor.constraint(equalToConstant: 60),
-            
-            playerOneLabel.topAnchor.constraint(equalTo: playerOneImageView.bottomAnchor),
-            playerOneLabel.centerXAnchor.constraint(equalTo: playerOneImageView.centerXAnchor),
-            playerOneLabel.leadingAnchor.constraint(greaterThanOrEqualTo: safeAreaLayoutGuide.leadingAnchor, constant: 5),
-            
-            playerOneScoreLabel.topAnchor.constraint(equalTo: playerOneLabel.bottomAnchor),
-            playerOneScoreLabel.centerXAnchor.constraint(equalTo: playerOneImageView.centerXAnchor),
+            stackOne!.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 15),
+            stackOne!.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 10),
+            stackOne!.widthAnchor.constraint(lessThanOrEqualTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.2),
                         
-            xxx,
-            playerOneWordsTableView.leftAnchor.constraint(greaterThanOrEqualTo: playerOneImageView.rightAnchor, constant: 10),
-            playerOneWordsTableView.leftAnchor.constraint(greaterThanOrEqualTo: playerOneLabel.rightAnchor, constant: 10),
+            playerOneWordsTableView.leftAnchor.constraint(equalTo: stackOne!.rightAnchor, constant: 0),
             
             playerOneWordsTableView.trailingAnchor.constraint(equalTo: centerXAnchor),
             playerOneWordsTableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             playerOneWordsTableView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor),
             
-            
-            playerTwoImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 15),
-            imageRight,
-            playerTwoImageView.widthAnchor.constraint(equalToConstant: 60),
-            playerTwoImageView.heightAnchor.constraint(equalToConstant: 60),
-                    
-           
-            playerTwoLabel.topAnchor.constraint(equalTo: playerTwoImageView.bottomAnchor),
-            playerTwoLabel.centerXAnchor.constraint(equalTo: playerTwoImageView.centerXAnchor),
-            playerTwoLabel.trailingAnchor.constraint(lessThanOrEqualTo: safeAreaLayoutGuide.trailingAnchor, constant: -5),
-            
-            playerTwoScoreLabel.topAnchor.constraint(equalTo: playerTwoLabel.bottomAnchor),
-            playerTwoScoreLabel.centerXAnchor.constraint(equalTo: playerTwoImageView.centerXAnchor),
-               
-            
-            xxx2,
-            playerTwoWordsTableView.rightAnchor.constraint(lessThanOrEqualTo: playerTwoImageView.rightAnchor, constant: 10),
-            playerTwoWordsTableView.rightAnchor.constraint(lessThanOrEqualTo: playerTwoLabel.rightAnchor, constant: 10),
-            
-            playerTwoWordsTableView.trailingAnchor.constraint(equalTo: playerTwoImageView.leadingAnchor),
-            playerTwoWordsTableView.leadingAnchor.constraint(equalTo: playerOneWordsTableView.trailingAnchor),
+                        
+            stackTwo!.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 15),
+            stackTwo!.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -10),
+            stackTwo!.widthAnchor.constraint(lessThanOrEqualTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.2),
+                                
+            playerTwoWordsTableView.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
+            playerTwoWordsTableView.rightAnchor.constraint(equalTo: stackTwo!.leftAnchor, constant: 0),
             playerTwoWordsTableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             playerTwoWordsTableView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor),
-            playerTwoWordsTableView.widthAnchor.constraint(greaterThanOrEqualTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.25),
+            
             
             horizontalLine.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 0), // Position it 100 points from the top
-            horizontalLine.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
-            horizontalLine.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.6),
+            horizontalLine.leftAnchor.constraint(equalTo: playerOneWordsTableView.leftAnchor),
+            horizontalLine.rightAnchor.constraint(equalTo: playerTwoWordsTableView.rightAnchor),
             horizontalLine.heightAnchor.constraint(equalToConstant: 3),
             
             
@@ -197,9 +200,17 @@ class Score: UIView, UITableViewDelegate, UITableViewDataSource {
             verticalLine.widthAnchor.constraint(equalToConstant: 3),
             verticalLine.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
             verticalLine.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
-            
-
         ])
+        
+        if (info != nil) {
+            if (info?.opponentInfo1.words.count ?? 0 > 0) {
+                playerOneWordsTableView.scrollToRow(at: IndexPath.SubSequence(row: info!.opponentInfo1.words.count - 1, section: 0), at: UITableView.ScrollPosition.middle, animated: true)
+            }
+            
+            if (info?.opponentInfo2.words.count ?? 0 > 0) {
+                playerTwoWordsTableView.scrollToRow(at: IndexPath.SubSequence(row: info!.opponentInfo2.words.count - 1, section: 0), at: UITableView.ScrollPosition.middle, animated: true)
+            }
+        }
     }
     
     // UITableViewDataSource methods
@@ -232,7 +243,6 @@ class Score: UIView, UITableViewDelegate, UITableViewDataSource {
             
         cell.textLabel?.text = s
         cell.layer.borderWidth = 0
-        //cell.textLabel?.textColor = .white
         
         if (tableView == sel && selId == indexPath.row) {
             cell = UITableViewCell()
@@ -279,24 +289,25 @@ class Score: UIView, UITableViewDelegate, UITableViewDataSource {
         
         let color = UIColor(hex: "#DF5386")
         
-        image.layer.borderWidth = 5
-        image.layer.cornerRadius = playerTwoImageView.image!.size.width / 4.0
+        image.layer.borderWidth = 4
+        if playerTwoImageView.image != nil {
+            image.layer.cornerRadius = playerTwoImageView.image!.size.width / 2.0
+        }
         image.layer.masksToBounds = true
         image.layer.borderColor = color!.cgColor
         
         title.textColor = color
         score.textColor = color
-        
-        
-        
     }
     
     private func setOther(_ image: UIImageView, _ title: UILabel, _ score: UILabel) {
-        let color = UIColor(hex: "#DF5386")
-        
-        image.layer.borderWidth = 0
-        image.layer.masksToBounds = false
-        image.layer.borderColor = .none
+                
+        image.layer.borderWidth = 3
+        image.layer.masksToBounds = true
+        if playerTwoImageView.image != nil {
+            image.layer.cornerRadius = playerTwoImageView.image!.size.width / 2.0
+        }
+        image.layer.borderColor = UIColor.clear.cgColor
         
         title.textColor = .white
         score.textColor = .white

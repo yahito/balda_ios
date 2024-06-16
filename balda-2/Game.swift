@@ -70,6 +70,8 @@ class Game {
     var uncommited: [[Character]]? = nil
     
     var allowUncommited: Bool = false
+    
+    var block: Bool = false
 
     init(_ state: GameGridState, _ view: GridView) {
         self.view = view
@@ -96,21 +98,22 @@ class Game {
                 uncommited = state.grid
             }
             state.grid[row][column] = newValue
-            self.view.game = self
+            self.view.setGame(self)
         }
     }
     
-    public func setLetter(_ row: Int, _ column: Int, _ newValue: Character) {
-        if (!Constants.isLetterPlaceholder(state.grid[row][column])) {
+    public func setLetter(_ row: Int, _ column: Int, _ newValue: Character, _ completion: ((Bool) -> Void)? = nil, _ any: Bool) {
+        if (!any && !Constants.isLetterPlaceholder(state.grid[row][column])) {
             return
         }
+        
         if allowUncommited && uncommited == nil {
             uncommited = state.grid
         }
         
         setLetterToCell((row, column), newValue, &state.grid)
         
-        self.view.game = self
+        self.view.setGame(self, completion)
     }
     
     public func setBomb(_ row: Int, _ column: Int) {
@@ -135,7 +138,7 @@ class Game {
         NotificationCenter.default.post(name: .opponentChanged, object: nil, userInfo: ["local": currentOpponent is LocalOpponent, "lang": state.lang.languageCode])
         
         
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
+        DispatchQueue.global(qos: .userInitiated).async {
             self.currentOpponent!.nextStep()
         }
     }
@@ -195,11 +198,27 @@ class Game {
     }
     
     public func finishStep(_ opponent: Opponent, _ points: [(Int, Int)], _ word: String, _ bombc: (Int, Int)?) {
+        
+        let completion: ((Bool) -> Void) = { _ in
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                self.view.setCellsToHighlight(points, { bomb in
+                    if bomb {
+                        self.state.addWord(word, self.getOpponentIndex(opponent), true)
+                        self.resetStep()
+                        self.view.endLocalInput()
+                        self.skipStep()
+                    } else {
+                        self.finishStep(opponent, word, points, bombc)
+                    }
+                }, true);
+            }
+        }
+        
         allowUncommited = true
         for i in 0..<word.count {
             let p = points[i]
             if state.grid[p.0][p.1] == Constants.question_char {
-                setLetter(p.0, p.1, word[i].last!)
+                setLetter(p.0, p.1, word[i].last!, completion, false)
                 break
             }
         }
@@ -212,21 +231,15 @@ class Game {
         }
         
         
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            self.view.setCellsToHighlight(points, { bomb in
-                if bomb {
-                    self.state.addWord(word, self.getOpponentIndex(opponent), true)
-                    self.resetStep()
-                    self.view.endLocalInput()
-                    self.skipStep()
-                } else {
-                    self.finishStep(opponent, word, points, bombc)
-                }
-            }, true);
-        }
+
     }
     
     public func resetAndSkipStep() {
+        
+        if block {
+            return
+        }
+
         if !(currentOpponent is LocalOpponent) {
             return;
         }
@@ -244,7 +257,7 @@ class Game {
             
             currentOpponent?.bomb = nil
             getOther(currentOpponent!).bomb = nil
-            view.game = self
+            view.setGame(self)
         }
     }
     
@@ -305,7 +318,7 @@ class Game {
             setLetterToCell(cells[i], word[i].last!, &table)
         }
         self.state.grid = table
-        self.view.game = self
+        self.view.setGame(self)
         
         opponent.bomb = bomb
         opponent.incrementScore(increment: word.count)
@@ -317,6 +330,10 @@ class Game {
     }
     
     public func __finishStep() -> Result {
+        if block {
+            return Result.NONE
+        }
+        
         if !(currentOpponent is LocalOpponent) {
             return Result.NONE
         }
@@ -346,10 +363,12 @@ class Game {
 
                     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
                     
+                    block = true
+                    
                     view.setCellsToHighlight(view.getHiglightedCells().reversed(),
                                              { bomb in
                         self.cancelSelection()
-                        
+                        self.block = false
                     }, false)
                  
                     return Result.NONE
@@ -372,7 +391,7 @@ class Game {
     
     public func localInput(_ opponent: Opponent) {
         allowUncommited = true
-        self.view.localInput(opponent.score >= 0)
+        self.view.localInput(false)
     }
     
     public func save(_ encoder: JSONEncoder) -> Data? {
@@ -395,8 +414,8 @@ class Game {
     
     func getInfo() -> Info {
         return Info(
-            OpponentInfo(state.name1, state.words1, state.score1, state.fail1),
-            OpponentInfo(state.name2, state.words2, state.score2, state.fail2)
+            OpponentInfo(state.name1, state.words1, state.score1, state.fail1, state.userPic1),
+            OpponentInfo(state.name2, state.words2, state.score2, state.fail2, state.userPic2)
         )
     }
     
@@ -406,7 +425,14 @@ class Game {
         return names[randomIndex]
     }
     
-    func cancelSelection() {
+    func __cancelSelection() {
+        if block {
+            return;
+        }
+        self.cancelSelection()
+    }
+    
+    private func cancelSelection() {
         if !(currentOpponent is LocalOpponent) {
             return
         }
@@ -435,6 +461,16 @@ class Game {
     case NOTHING_SELECTED
 }
 
+public enum UserPic: String, Decodable, Encodable, CaseIterable {
+    case CAT
+    case DOG
+    case ELEPHANT
+    case FROG
+    case HARE
+    case OWL
+    case PARROT
+}
+
 
 public class Info {
     let opponentInfo1: OpponentInfo;
@@ -451,12 +487,14 @@ public class OpponentInfo {
     let words: [String]
     let score: Int
     let fails: [Int]
+    let userPic: UserPic
     
-    init(_ name: String, _ words: [String], _ score: Int, _ fails: [Int]) {
+    init(_ name: String, _ words: [String], _ score: Int, _ fails: [Int], _ userPic: UserPic) {
         self.name = name
         self.words = words
         self.score = score
         self.fails = fails
+        self.userPic = userPic
     }
 }
 

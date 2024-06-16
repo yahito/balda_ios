@@ -34,27 +34,35 @@ class BottomPanelView: UIView {
         addSubview(backgroundImageView)
         sendSubviewToBack(backgroundImageView)
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
-        
         // Add and layout buttons
         let stackView = UIStackView(arrangedSubviews: [skipButton, nextGameButton, finishStepButton, undoSelectionButton])
-        stackView.axis = .horizontal
-        stackView.distribution = .fillEqually
-        stackView.spacing = 10
+                    
         stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .horizontal
+        stackView.alignment = .center
+        stackView.distribution = .equalSpacing
+        
         addSubview(stackView)
 
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: self.topAnchor),
             stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            stackView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.9),
+            stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
             
             backgroundImageView.topAnchor.constraint(equalTo: self.topAnchor),
             backgroundImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             backgroundImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            backgroundImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor)
+            backgroundImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
         
         ])
+        
+        for button in [skipButton, nextGameButton, finishStepButton, undoSelectionButton] {
+            NSLayoutConstraint.activate([
+                button.widthAnchor.constraint(equalTo: backgroundImageView.widthAnchor, multiplier: 1/8),
+                button.heightAnchor.constraint(equalTo: backgroundImageView.heightAnchor, multiplier: 1/2),
+            ])
+        }
         
         let hover = UIHoverGestureRecognizer(target: self, action: #selector(handleHover(_:)))
         skipButton.addGestureRecognizer(hover)
@@ -64,9 +72,16 @@ class BottomPanelView: UIView {
     
         
         skipButton.setImage(UIImage(named: "shrug"), for: .normal)
+        skipButton.imageView?.contentMode = .scaleAspectFit
+        
         nextGameButton.setImage(UIImage(named: "new_game"), for: .normal)
+        nextGameButton.imageView?.contentMode = .scaleAspectFit
+        
         finishStepButton.setImage(UIImage(named: "done"), for: .normal)
+        finishStepButton.imageView?.contentMode = .scaleAspectFit
+        
         undoSelectionButton.setImage(UIImage(named: "renew"), for: .normal)
+        undoSelectionButton.imageView?.contentMode = .scaleAspectFit
     
     }
     

@@ -9,7 +9,7 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, DismissalDelegate {
+class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, DismissalDelegate {
     
     var gridView: GridView?
     var titleView: UILabel = UILabel()
@@ -25,6 +25,7 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
 
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        
         return .portrait
     }
     
@@ -59,7 +60,7 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
                                                   alphabet: game!.getAlphabet())
             }
             
-            gridView!.game = game
+            gridView!.setGame(game!)
             game!.move()
             let hh = view.bounds.height - gridView!.frame.minY - gridView!.frame.height - 10;
             let wordFrame = CGRect(x: 0, y: 500, width: view.bounds.width, height: view.bounds.height - 600 - 50)
@@ -67,6 +68,10 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             //if (scoreBoard == nil) {
               //  scoreBoard = Score(frame: wordFrame)
                 view.addSubview(scoreBoard)
+                scoreBoard.onUserPicChange = {
+                    self.gridState?.userPic1 = self.gridState!.getOtherPic(self.gridState!.userPic1)
+                    self.scoreBoard.setInfo(self.game!.getInfo())
+                }
             //}
             //scoreBoard!.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
             //scoreBoard!.backgroundColor = .black
@@ -100,36 +105,30 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             
             titleView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
-            
-            // First view constraints
             gridView!.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 5),
             gridView!.centerXAnchor.constraint(equalTo:  view.safeAreaLayoutGuide.centerXAnchor),
             gridView!.widthAnchor.constraint(equalTo: gridView!.heightAnchor),
             gridView!.heightAnchor.constraint(equalToConstant: CGFloat(getGridBottom(gridState!.grid.count))),
-            
-            ///   let wordFrame = CGRect(x: pos, y: getGridBottom(gridState!.grid.count) + 10, width: w, height: 50)
+        
             
             wordView!.topAnchor.constraint(equalTo: gridView!.bottomAnchor, constant: 1),
             wordView!.heightAnchor.constraint(equalToConstant: UIDevice.current.userInterfaceIdiom == .pad ? 55: 40),
             wordView!.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             wordView!.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.5),
-           // wordView!.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             
             keyboardView!.topAnchor.constraint(equalTo: gridView!.bottomAnchor, constant: 0),
             keyboardView!.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             keyboardView!.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
                                         
-                    // Second view constraints
             scoreBoard.topAnchor.constraint(equalTo: wordView!.bottomAnchor, constant: 10),
             scoreBoard.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             scoreBoard.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-                    
-                    // Third view constraints
-            //bottomPanel.topAnchor.constraint(equalTo: scoreBoard!.bottomAnchor),
+
             bottomPanel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             bottomPanel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            bottomPanel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            bottomPanel.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
+            bottomPanel.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.09),
             
             scoreBoard.bottomAnchor.constraint(equalTo: bottomPanel.topAnchor),
             keyboardView!.bottomAnchor.constraint(equalTo: bottomPanel.topAnchor),
@@ -203,11 +202,7 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         initGame()
     
        NSLayoutConstraint.activate([
-            bottomPanel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            bottomPanel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            bottomPanel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bottomPanel.heightAnchor.constraint(equalToConstant: 60), // or whatever height you want
-            
+         
             
             backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
             backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
@@ -223,7 +218,9 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     @objc func showKeyboard(_ notification: Notification) {
-
+        if !(game?.currentOpponent is LocalOpponent) {
+            return
+        }
         
         keyboardView!.backgroundColor = .clear
         keyboardView!.isHidden = false
@@ -233,13 +230,13 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         let s: ((Character) -> Void) = { [weak self] letter in
             self!.gridView!.handleLetterSelection(letter, x!)
-            
-            self!.keyboardView!.isHidden = true
-            self!.scoreBoard.isHidden = !self!.keyboardView!.isHidden
         }
         
         
         keyboardView!.letterTapped = s
+        keyboardView!.onFinish = {
+            self.hideKeyboard()
+        }
     }
     
     @objc func updateWord(_ notification: Notification) {
@@ -292,8 +289,8 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         let res = 4.0*_totalMargin + (Double(size) * _cellWidth);
         
-        if res > view.bounds.height*0.6 {
-            return view.bounds.height*0.6
+        if res > view.bounds.height*0.55 {
+            return view.bounds.height*0.55
         }
         return res;
     }
@@ -315,6 +312,12 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         var w = view.bounds.width*0.5
         var pos = (view.bounds.width - w)/2
+        
+        if (gridState == nil) {
+            gridState = GameGridState(Words.getRandomWord(Size.FIVE.getGridSize(), Level.MEDIUM, Lang.RUS)!,
+                                            Size.FIVE, 0, Level.MEDIUM, Lang.RUS, "Игрок",
+                                            UserPic.allCases[Int.random(in: 0..<UserPic.allCases.count)]);
+        }
         
         
         let wordFrame = CGRect(x: pos, y: getGridBottom(gridState!.grid.count) + 10, width: w, height: 50)
@@ -348,20 +351,21 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         view.addSubview(f)*/
     }
     
-    @objc func skipStepPressed() {
+    @objc func skipStepPressed() { 
+        game?.view.allowLocalInput = false
         undoSelectionPressed()
         self.game!.resetAndSkipStep()
     }
     
-    func viewControllerDidDismiss(_ level: Level, _ lang: Lang, _ size: Size, _ name: String) {
+    func viewControllerDidDismiss(_ level: Level, _ lang: Lang, _ size: Size, _ name: String, _ pic: UserPic) {
         self.gridView?.removeFromSuperview()
-        self.gridState = GameGridState(Words.getRandomWord(size.getGridSize(), Level.HARD, lang)!, size, 0, level, lang, name);
+        self.gridState = GameGridState(Words.getRandomWord(size.getGridSize(), Level.HARD, lang)!, size, 0, level, lang, name, pic);
         self.wordView?.removeFromSuperview()
         self.initGame();
     }
 
     @objc func nextGamePressed() {
-        let menuVC = StartMenuViewController(self, game!.state.level, game!.state.lang, game!.state.size, game!.state.name1)
+        let menuVC = StartMenuViewController(self, game!.state.level, game!.state.lang, game!.state.size, game!.state.name1, game!.state.userPic1)
         
         menuVC.modalPresentationStyle = .overCurrentContext
         menuVC.modalTransitionStyle = .coverVertical
@@ -399,6 +403,7 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         let res = game?.__finishStep()
         if (res != nil) {
+            hideKeyboard()
             if res == Result.NOT_FOUND {
                 let alertController = UIAlertController(title: "Confirmation",
                                                         message: "Word not found",
@@ -431,27 +436,19 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
              
             }
         }
+        
     }
 
     @objc func undoSelectionPressed() {
+        hideKeyboard()
+        game?.__cancelSelection()
+    }
+    
+    private func hideKeyboard() {
         if (keyboardView != nil) {
             keyboardView!.isHidden = true
             scoreBoard.isHidden = !keyboardView!.isHidden
         }
-        game?.cancelSelection()
     }
-    
-    @objc func scoreButtonPressed() {
-        let scoreBoardView = ScoreBoardView(frame: .zero, info: game!.getInfo())
 
-       view.addSubview(scoreBoardView)
-        
-        NSLayoutConstraint.activate([
-            scoreBoardView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            scoreBoardView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            scoreBoardView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.5),
-            scoreBoardView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor) // Center vertically or set to the top
-        ])
-        scoreBoardView.translatesAutoresizingMaskIntoConstraints = false
-    }
 }

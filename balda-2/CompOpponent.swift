@@ -64,17 +64,18 @@ class CompOpponent: Opponent {
                 }
             }
         }
-        
-        let bomb: (Int, Int)? = nil; //possible.randomElement();
     
-        
-        if ress != nil && ress!.getWord() != nil {
-            let last = ress!.getWord()!
-            game.finishStep(self, ress!._getPoints(), ress!.getWord()!, bomb)
-        } else {
-            game.noIdea(self)
-        }
+        DispatchQueue.main.async {
+            let bomb: (Int, Int)? = nil; //possible.randomElement()
             
+            if ress != nil && ress!.getWord() != nil {
+                let last = ress!.getWord()!
+                self.game.finishStep(self, ress!._getPoints(), ress!.getWord()!, bomb)
+            } else {
+                self.game.noIdea(self)
+            }
+            
+        }
             
     }
     

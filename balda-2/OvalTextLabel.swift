@@ -62,7 +62,7 @@ class OvalLabel: UIView {
         label.text = text
         isHidden = text?.isEmpty ?? true
         setNeedsDisplay()
-        print(self)
+        
     }
 
     override func layoutSubviews() {

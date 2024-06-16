@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F220D472C06451A003E70C7 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F220D462C06451A003E70C7 /* Nunito-ExtraBold.ttf */; };
 		5F23FBE92ABE257300417468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23FBE82ABE257300417468 /* AppDelegate.swift */; };
 		5F23FBEB2ABE257300417468 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F23FBEA2ABE257300417468 /* GameScene.sks */; };
 		5F23FBED2ABE257300417468 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F23FBEC2ABE257300417468 /* Actions.sks */; };
@@ -22,7 +23,9 @@
 		5F3294902BE7B379006DF3D1 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F32948F2BE7B379006DF3D1 /* Wrapper.swift */; };
 		5F34A72D2B1368F800CFFA3D /* OvalTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A72C2B1368F800CFFA3D /* OvalTextLabel.swift */; };
 		5F3946AC2AE9924700C8C648 /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3946AB2AE9924700C8C648 /* ScoreBoard.swift */; };
+		5F4D8DF12C023FB200A19896 /* UserDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D8DF02C023FB200A19896 /* UserDialog.swift */; };
 		5F5ABE552BF0FD8E00CC4688 /* balda.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5F5ABE542BF0FD8E00CC4688 /* balda.xcstrings */; };
+		5F8231F22BFB462B005BF53B /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8231F12BFB462B005BF53B /* UIImageExt.swift */; };
 		5F967F092AF6E7FD00F49502 /* StartMenuViewConvtroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F967F082AF6E7FD00F49502 /* StartMenuViewConvtroller.swift */; };
 		5F967F0B2B00CD5200F49502 /* HintWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F967F0A2B00CD5200F49502 /* HintWindow.swift */; };
 		5FA8D4EA2AD0B52D0003C97A /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8D4E92AD0B52D0003C97A /* GameState.swift */; };
@@ -84,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F220D462C06451A003E70C7 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
 		5F23FBE52ABE257300417468 /* Balda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Balda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F23FBE82ABE257300417468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F23FBEA2ABE257300417468 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -102,8 +106,10 @@
 		5F32948F2BE7B379006DF3D1 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
 		5F34A72C2B1368F800CFFA3D /* OvalTextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalTextLabel.swift; sourceTree = "<group>"; };
 		5F3946AB2AE9924700C8C648 /* ScoreBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
+		5F4D8DF02C023FB200A19896 /* UserDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDialog.swift; sourceTree = "<group>"; };
 		5F5ABE542BF0FD8E00CC4688 /* balda.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = balda.xcstrings; sourceTree = "<group>"; };
 		5F5ABE562BF1033700CC4688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5F8231F12BFB462B005BF53B /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		5F967F082AF6E7FD00F49502 /* StartMenuViewConvtroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuViewConvtroller.swift; sourceTree = "<group>"; };
 		5F967F0A2B00CD5200F49502 /* HintWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintWindow.swift; sourceTree = "<group>"; };
 		5FA8D4E92AD0B52D0003C97A /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
@@ -212,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				5F5ABE562BF1033700CC4688 /* Info.plist */,
+				5F4D8DF02C023FB200A19896 /* UserDialog.swift */,
 				5F5ABE542BF0FD8E00CC4688 /* balda.xcstrings */,
 				5F23FBE82ABE257300417468 /* AppDelegate.swift */,
 				5F23FBEA2ABE257300417468 /* GameScene.sks */,
@@ -231,6 +238,7 @@
 				5FC87BFA2AC8A97800C9D0AC /* CompOpponent.swift */,
 				5FC87BFC2AC9F3E600C9D0AC /* LocalOpponent.swift */,
 				5FC87BFE2AC9F43600C9D0AC /* Opponent.swift */,
+				5F220D462C06451A003E70C7 /* Nunito-ExtraBold.ttf */,
 				5FA8D4E92AD0B52D0003C97A /* GameState.swift */,
 				5FA8D4EB2AD289550003C97A /* BottomPanelView.swift */,
 				5F3946AB2AE9924700C8C648 /* ScoreBoard.swift */,
@@ -241,6 +249,7 @@
 				5F32948F2BE7B379006DF3D1 /* Wrapper.swift */,
 				5FFCD0AF2BED145400031A77 /* UIColor.swift */,
 				5FFC5A5A2BF884F700FF4DB4 /* Localized.swift */,
+				5F8231F12BFB462B005BF53B /* UIImageExt.swift */,
 			);
 			path = "balda-2";
 			sourceTree = "<group>";
@@ -473,6 +482,7 @@
 				5F23FBF92ABE257400417468 /* LaunchScreen.storyboard in Resources */,
 				5F5ABE552BF0FD8E00CC4688 /* balda.xcstrings in Resources */,
 				5F23FBED2ABE257300417468 /* Actions.sks in Resources */,
+				5F220D472C06451A003E70C7 /* Nunito-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,8 +536,10 @@
 				5FC87BF72AC4AF6D00C9D0AC /* Search.swift in Sources */,
 				5F23FBEF2ABE257300417468 /* GameScene.swift in Sources */,
 				5FC87BF12ABF7CBE00C9D0AC /* Game.swift in Sources */,
+				5F4D8DF12C023FB200A19896 /* UserDialog.swift in Sources */,
 				5FC87BF32ABF839A00C9D0AC /* LetterKeyboardView.swift in Sources */,
 				5F23FC1C2ABE280100417468 /* CustomView.swift in Sources */,
+				5F8231F22BFB462B005BF53B /* UIImageExt.swift in Sources */,
 				5FC87BF92AC4AFD600C9D0AC /* Constants.swift in Sources */,
 				5FC87BFB2AC8A97800C9D0AC /* CompOpponent.swift in Sources */,
 				5FFCD0B02BED145400031A77 /* UIColor.swift in Sources */,
@@ -786,8 +798,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -821,8 +832,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

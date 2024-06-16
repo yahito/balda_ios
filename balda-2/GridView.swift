@@ -18,7 +18,7 @@ class GridView: UIView, CAAnimationDelegate {
     private let redImage = UIImage(named: "grid_cell_red")
     
     
-    private var allowLocalInput = false
+     var allowLocalInput = false
     
     private let selectedTextLabel: UILabel = {
         let label = UILabel()
@@ -130,9 +130,7 @@ class GridView: UIView, CAAnimationDelegate {
             }
             return
         }
-        
-        print(cell)
-        print(lettersCells[cell.0][cell.1].titleLabel?.text)
+                        
         
         if lettersCells[cell.0][cell.1].explode {
             addBurst(lettersCells[cell.0][cell.1], {})
@@ -160,25 +158,27 @@ class GridView: UIView, CAAnimationDelegate {
         return min(getAvailableWidth() / Double(gridSize), getAvailableHeigh() / Double(gridSize))
     }
     
-    var game: Game? {
-        didSet { // Ensure square cells and fit within the view
-            if getCellWidth() > 0 {
-                updateL()
-            }
-            setNeedsDisplay()
+    private var game: Game?
+    
+    func getGame() -> Game? {
+        return game;
+    }
+    
+    func setGame(_ game: Game, _ completion: ((Bool) -> Void)? = nil) {
+        self.game = game
+        if getCellWidth() > 0 {
+            updateL(completion)
         }
+        setNeedsDisplay()
     }
     
     override func layoutSubviews() {
-         super.layoutSubviews()
-         updateL()
-        selectedTextLabel.frame = CGRect(x: 10, y: bounds.height - 40, width: bounds.width - 80, height: 30)
-      /*  cancelButton.frame = CGRect(x: bounds.width - 70, y: bounds.height - 40, width: 60, height: 30)
-        nextButton.frame = CGRect(x: bounds.width - 140, y: bounds.height - 40, width: 60, height: 30)
-        okButton.frame = CGRect(x: bounds.width - 210, y: bounds.height - 40, width: 60, height: 30)
-        skipButton.frame = CGRect(x: bounds.width - 280, y: bounds.height - 40, width: 60, height: 30)
-     */
-       }
+        super.layoutSubviews()
+        if lettersCells.count == 0 {
+            updateL()
+            selectedTextLabel.frame = CGRect(x: 10, y: bounds.height - 40, width: bounds.width - 80, height: 30)
+        }
+   }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -215,11 +215,10 @@ class GridView: UIView, CAAnimationDelegate {
     func handleLetterSelection(_ letter: Character, _ cell: (Int, Int)) {
       
             // Update the game state for the selected cell with the chosen letter.
-        game?.setLetter(cell.0, cell.1, letter)
         setNeedsDisplay() // to redraw the grid
-        
-        
-        setVisibleValue(lettersCells[cell.0][cell.1], letter)
+                
+        setVisibleValue(lettersCells[cell.0][cell.1], letter, false)
+        game?.setLetter(cell.0, cell.1, letter, nil, true)
         userSelection = true;
         
     }
@@ -237,14 +236,56 @@ class GridView: UIView, CAAnimationDelegate {
         var explode = false
         var userSelected = false
     }
+    
+    
 
     
     
-    fileprivate func setVisibleValue(_ uiField: CustomUITextField, _ letterChar: Character) {
+    fileprivate func setVisibleValue(_ uiField: CustomUITextField, _ letterChar: Character, 
+                                     _ enableEnaimation: Bool = false,
+                                     _ completion: ((Bool) -> Void)? = nil) {
         if (game!.isAlphabetCharacter(letterChar)) {
-            uiField.setTitle(String(letterChar), for: .normal)
+            if (!uiField.ocupied) {
+                if (enableEnaimation) {
+                    let frame = UIView(frame: uiField.frame)
+                    addSubview(frame)
+ 
+                    let tmp = CustomUITextField()
+                    tmp.setTitle("!", for: .normal)
+                    tmp.frame = CGRect(x: 0, y: 0, width: frame.frame.width, height: frame.frame.height)
+                    formatLetter(tmp, getCellWidth())
+                    tmp.setTitleColor(UIColor(hex: "#DF5386"), for: .normal)
+                    frame.addSubview(tmp)
+                    
+                    
+                    uiField.isHidden = true
+                    uiField.removeFromSuperview()
+                    uiField.frame = frame.bounds
+                    frame.addSubview(uiField)
+                    uiField.setTitle(String(letterChar), for: .normal)
+                    uiField.frame = CGRect(x: 0, y: 0, width: frame.frame.width, height: frame.frame.height)
+             
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
+                        UIView.transition(from: tmp, to: uiField, duration: 0.7, options: [.transitionFlipFromLeft, .showHideTransitionViews],
+                                          completion: { _ in
+                            
+                            tmp.removeFromSuperview()
+                            if completion != nil {
+                                completion!(true)
+                            }
+                        })
+                    }
+                                        
+                } else {
+                    uiField.setTitle(String(letterChar), for: .normal)
+                }
+            } else {
+                uiField.setTitle(String(letterChar), for: .normal)
+            }
+            
             uiField.ocupied = true
             uiField.candidate = false
+            
         } else {
             if (Constants.isLetterPlaceholder(letterChar)) {
                 uiField.candidate = true
@@ -259,7 +300,37 @@ class GridView: UIView, CAAnimationDelegate {
         
     }
  
-    private func updateL() {
+    fileprivate func formatLetter(_ textField: GridView.CustomUITextField, _ cellWidth: Double) {
+        textField.backgroundColor = .clear
+        textField.layer.borderWidth = 1
+        
+        textField.addTarget(self, action: #selector(showKeyboard(_:)), for: .touchUpInside)
+        
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
+        textField.addGestureRecognizer(panGesture)
+        
+        // Position textField in the center of glowView.
+        textField.titleLabel?.textAlignment = .center
+        textField.setBackgroundImage(UIImage(named: "grid_cell"), for: .normal)
+        
+        let fontSize = cellWidth*0.8;
+        
+        if let nunitoFont = UIFont(name: "Nunito-ExtraBold", size: fontSize) {
+            textField.titleLabel?.font = nunitoFont;
+        } else {
+            textField.titleLabel?.font = UIFont.boldSystemFont(ofSize: fontSize)
+        }
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            if let nunitoFont = UIFont(name: "Nunito-ExtraBold", size: fontSize) {
+                textField.titleLabel?.font = nunitoFont
+            } else {
+                textField.titleLabel?.font = UIFont.boldSystemFont(ofSize: fontSize)
+            }
+        }
+    }
+    
+    private func updateL(_ completion: ((Bool) -> Void)? = nil) {
         let b = getBomb()
         
         if b != nil {
@@ -274,7 +345,7 @@ class GridView: UIView, CAAnimationDelegate {
                     let letterChar: Character! = game.state.grid[i][j]
                                           
                     if lettersCells.count > i && lettersCells[i].count > j {
-                        setVisibleValue(lettersCells[i][j], letterChar)
+                        setVisibleValue(lettersCells[i][j], letterChar, true, completion)
                         continue
                     }
                     
@@ -284,26 +355,19 @@ class GridView: UIView, CAAnimationDelegate {
                     let textField = CustomUITextField(frame: cellRect) // Adjust width and height as necessary.
                   
                     
-                    setVisibleValue(textField, letterChar)
-                    
-                    textField.backgroundColor = .clear
+                    setVisibleValue(textField, letterChar, true)
                     textField.customId = (i, j)
-                    textField.layer.borderWidth = 1
                     
-                    textField.addTarget(self, action: #selector(showKeyboard(_:)), for: .touchUpInside)
-                    
-                    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
-                    textField.addGestureRecognizer(panGesture)
-                    
-                    // Position textField in the center of glowView.
-                    textField.titleLabel?.textAlignment = .center
-                    textField.setBackgroundImage(UIImage(named: "grid_cell"), for: .normal)
-                    textField.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40);
-                    
-                    if UIDevice.current.userInterfaceIdiom == .pad {
-                        textField.titleLabel?.font = UIFont.boldSystemFont(ofSize: 50);
+                    formatLetter(textField, cellWidth)
+                    if textField.superview == nil {
+                        addSubview(textField)
                     }
-                    addSubview(textField)
+                    sendSubviewToBack(textField)
+                    
+                    if game.isAlphabetCharacter(letterChar) {
+                        
+                        //textField.animateEmerging(duration: 0.5, delay: delay)
+                    }
                     
                     if (lettersCells.count <= i) {
                         lettersCells.append([])

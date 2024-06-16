@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol DismissalDelegate {
-    func viewControllerDidDismiss(_ level: Level, _ lang: Lang, _ size: Size, _ name: String)
+    func viewControllerDidDismiss(_ level: Level, _ lang: Lang, _ size: Size, _ name: String, _ pic: UserPic)
 }
 
 class StartMenuViewController: UIViewController {
@@ -21,13 +21,15 @@ class StartMenuViewController: UIViewController {
     var lang: Lang
     var size: Size
     let name: String
+    let userPic: UserPic
     
-    init(_ dismissDelegete: DismissalDelegate, _ level: Level, _ lang: Lang, _ size: Size, _ name: String) {
+    init(_ dismissDelegete: DismissalDelegate, _ level: Level, _ lang: Lang, _ size: Size, _ name: String, _ userPic: UserPic) {
         self.dismissDelegete = dismissDelegete
         self.level = level
         self.lang = lang
         self.size = size
         self.name = name
+        self.userPic = userPic
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -36,6 +38,7 @@ class StartMenuViewController: UIViewController {
         self.lang = .RUS
         self.size = .FIVE
         self.name = ""
+        self.userPic = UserPic.CAT
         super.init(coder: aDecoder)
     }
     
@@ -67,14 +70,13 @@ class StartMenuViewController: UIViewController {
         button.setBackgroundImage(UIImage(named: "start_menu_button_back"), for: .highlighted)
         
         button.setTitle(title, for: .normal)
-        
-        var buttonHeight: CGFloat = 40
+                
+        var buttonHeight: CGFloat = UIScreen.main.bounds.height*0.045
         var buttonSpacing: CGFloat = 10
-        
+                
         if UIDevice.current.userInterfaceIdiom == .pad {
             button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .extraLargeTitle)
             buttonHeight = 60
-            buttonSpacing = 10
         } else {
             button.titleLabel?.font = .boldSystemFont(ofSize: 20)
         }
@@ -105,15 +107,26 @@ class StartMenuViewController: UIViewController {
         
         shift += Level.allCases.count + 1
         
-        for (index, lang) in Lang.allCases.enumerated() {
+        /*for (index, lang) in Lang.allCases.enumerated() {
             langButtons.append(createbutton(lang.rawValue, index + shift, index, lang == self.lang, false, 0))
         }
         
-        shift += langButtons.count + 1
+        
+        */
+        
+        
+        shift += Lang.allCases.count + 1
         let controlTitles = ["start".translate(to: lang.languageCode), "cancel".translate(to: lang.languageCode)]
         
+        
         for (index, title) in controlTitles.enumerated() {
-            createbutton(title, index + shift, index, false, true, index)
+            let b = createbutton(title, index + shift, index, false, true, index)
+            
+            let buttonSpacing: CGFloat = 10
+            
+            let yOffset = view.bounds.height - CGFloat(((controlTitles.count - index + 1))) * (buttonSpacing + b.frame.height)
+            
+            b.frame = CGRect(x: b.frame.minX, y: yOffset, width: b.frame.width, height: b.frame.height)
         }
     }
     
@@ -141,7 +154,7 @@ class StartMenuViewController: UIViewController {
                 }
             }
         }  else if sender.tag == 0 {
-            self.dismissDelegete!.viewControllerDidDismiss(level, lang, size, name)
+            self.dismissDelegete!.viewControllerDidDismiss(level, lang, size, name, userPic)
             dismiss(animated: true)
         } else {
             dismiss(animated: true)
