@@ -3,6 +3,9 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "static Search.search(_:_:_:):Search.swift">
+      </ContextState>
+      <ContextState
          contextName = "GameViewController.undoSelectionPressed():GameViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -32,6 +35,14 @@
             </PersistentString>
             <PersistentString
                value = "sender.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SeededGenerator.next():Words.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "seed">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -86,6 +97,14 @@
             </PersistentString>
             <PersistentString
                value = "info?.opponentInfo1.words.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in GameCreator.createGameAndGenerateLink(completion:):GameCreator.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "GKLocalPlayer.local.isAuthenticated">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -305,28 +324,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "GameViewController.updateTextView(_:):GameViewController.swift">
+         contextName = "LetterKeyboardView.pan(_:):LetterKeyboardView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "Bundle.main.localizations">
-            </PersistentString>
-            <PersistentString
-               value = "String(localized: &quot;your_turn&quot;, table: &quot;balda&quot;, locale: Locale(identifier: &quot;ru&quot;))">
-            </PersistentString>
-            <PersistentString
-               value = " titleView.text">
-            </PersistentString>
-            <PersistentString
-               value = "Bundle.main.localizations&#10;">
-            </PersistentString>
-            <PersistentString
-               value = "Locale(identifier: &quot;ru&quot;)">
-            </PersistentString>
-            <PersistentString
-               value = "Bundle(path: Bundle.main.path(forResource: &quot;zz&quot;, ofType: &quot;lproj&quot;)!)">
-            </PersistentString>
-            <PersistentString
-               value = "Bundle.main.preferredLocalizations">
+               value = "recognizer">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -361,6 +362,35 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "GameViewController.updateTextView(_:):GameViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Bundle.main.localizations">
+            </PersistentString>
+            <PersistentString
+               value = "String(localized: &quot;your_turn&quot;, table: &quot;balda&quot;, locale: Locale(identifier: &quot;ru&quot;))">
+            </PersistentString>
+            <PersistentString
+               value = " titleView.text">
+            </PersistentString>
+            <PersistentString
+               value = "Bundle.main.localizations&#10;">
+            </PersistentString>
+            <PersistentString
+               value = "Locale(identifier: &quot;ru&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "Bundle.main.preferredLocalizations">
+            </PersistentString>
+            <PersistentString
+               value = "Bundle(path: Bundle.main.path(forResource: &quot;zz&quot;, ofType: &quot;lproj&quot;)!)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridView.initBomb(_:):GridView.swift">
+      </ContextState>
+      <ContextState
          contextName = "LetterKeyboardView.setupKeys():LetterKeyboardView.swift">
          <PersistentStrings>
             <PersistentString
@@ -371,17 +401,6 @@
             </PersistentString>
             <PersistentString
                value = "UIFont(name: &quot;Nunito-ExtraBold&quot;, size: 40)">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "GridView.initBomb(_:):GridView.swift">
-      </ContextState>
-      <ContextState
-         contextName = "LetterKeyboardView.pan(_:):LetterKeyboardView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "recognizer">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -440,6 +459,14 @@
             </PersistentString>
             <PersistentString
                value = "self.state.words">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in balda_2UITests.testExample2():balda_2UITests.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "app.staticTexts[&quot;title&quot;].label">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -506,12 +533,23 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "PeriodicAction.stop():balda_2UITests.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "isRunning">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "StartMenuViewController.createbutton(_:_:_:_:_:_:):StartMenuViewConvtroller.swift">
          <PersistentStrings>
             <PersistentString
                value = "UIScreen.main.bounds">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "balda_2UITests.testExample2():balda_2UITests.swift">
       </ContextState>
       <ContextState
          contextName = "Game.resetStep():Game.swift">
@@ -532,14 +570,6 @@
             </PersistentString>
             <PersistentString
                value = "tmp.bounds">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "GLOBAL">
-         <PersistentStrings>
-            <PersistentString
-               value = "gridState">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -635,6 +665,20 @@
          <PersistentStrings>
             <PersistentString
                value = "letterChar">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "balda_2UITests.testExample():balda_2UITests.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "app.buttons[&quot;skipButton&quot;].exists">
+            </PersistentString>
+            <PersistentString
+               value = "app.otherElements[&quot;skipButton&quot;].exists">
+            </PersistentString>
+            <PersistentString
+               value = "app.otherElements.allElementsBoundByIndex.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

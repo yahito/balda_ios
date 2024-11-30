@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "B3B8A4A2-3597-4506-A249-2455E9350AB6",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:balda-2.xcodeproj",
+        "identifier" : "5F8EBC7A2CD36F6300F26D5D",
+        "name" : "BaldaUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

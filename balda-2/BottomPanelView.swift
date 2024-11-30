@@ -28,6 +28,8 @@ class BottomPanelView: UIView {
     }
 
     private func setupView() {
+        skipButton.isAccessibilityElement = true
+        skipButton.accessibilityIdentifier = "skipButton"
         
         let backgroundImageView = UIImageView(image: UIImage(named: "menu_back"))
         backgroundImageView.contentMode = .scaleToFill

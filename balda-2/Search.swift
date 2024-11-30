@@ -12,7 +12,7 @@ import Foundation
 
 public class Search {
     
-    private static var random = SystemRandomNumberGenerator()
+    private static var random = Dict.randomGen()
     private static let DIRECTIONS = [
         (0, 1),   // Right
         (1, 0),   // Down
@@ -78,6 +78,7 @@ public class Search {
 
         if isValidSubstring(current) {
             let lastLetter = Constants.isLetterPlaceholder(current.last!)
+            
             var w = sink(current)
             if w != nil {
                 print("pattern: \(current)")

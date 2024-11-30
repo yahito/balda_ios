@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cancel</key>
+	<string>Отмена</string>
+	<key>def</key>
+	<string>Вы проиграли 😔</string>
+	<key>easy</key>
+	<string>Просто</string>
+	<key>hard</key>
+	<string>Сложно</string>
+	<key>medium</key>
+	<string>Средне</string>
+	<key>start</key>
+	<string>Старт</string>
+	<key>tie</key>
+	<string>Ничья</string>
+	<key>wait</key>
+	<string>Ход оппонента</string>
+	<key>win</key>
+	<string>Победа✌️</string>
+	<key>your_turn</key>
+	<string>Ваш ход</string>
+</dict>
+</plist>

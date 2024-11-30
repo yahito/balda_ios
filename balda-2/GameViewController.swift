@@ -29,7 +29,7 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         return .portrait
     }
     
-    private func search(_ min: Int, _ max: Int) -> SearchResult? {
+    private func search(_ min: Int, _ max: Int) -> SearchResult? {        
         let isPalindrome2: (String) -> Bool = { word in
             return !self.game!.state.containsWord(word) && word.count >= min && word.count <= max
         }
@@ -50,6 +50,9 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
 
     fileprivate func initGame() {
+        titleView.isAccessibilityElement = true
+        titleView.accessibilityIdentifier = "title"
+        
         gridView = initGrid()
         
         if gridState != nil {
@@ -187,7 +190,14 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
        
         bottomPanel.translatesAutoresizingMaskIntoConstraints = false
         // Add actions to buttons
+                
+        bottomPanel.accessibilityIdentifier = "xxx"
+        
         bottomPanel.skipButton.addTarget(self, action: #selector(skipStepPressed), for: .touchUpInside)
+        
+        bottomPanel.skipButton.accessibilityIdentifier = "skipButton"
+        bottomPanel.skipButton.isAccessibilityElement = true
+        
         bottomPanel.nextGameButton.addTarget(self, action: #selector(nextGamePressed), for: .touchUpInside)
         bottomPanel.finishStepButton.addTarget(self, action: #selector(finishStepPressed), for: .touchUpInside)
         bottomPanel.undoSelectionButton.addTarget(self, action: #selector(undoSelectionPressed), for: .touchUpInside)
@@ -303,18 +313,21 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         //gridView.frame = CGRect(x: 0, y: view.bounds.height*0.10, width: view.bounds.width, height: getGridBottom(gridState!.grid.count))
         titleView.frame = CGRect(x: 20, y: 10, width: view.bounds.width - 10, height: 100)
-        
+                
+        isAccessibilityElement = true
         view.addSubview(titleView)
         
         //bottomPanel.removeFromSuperview()
         view.addSubview(bottomPanel)
+        
+        view.accessibilityIdentifier = "view"
         //bottomPanel.frame = CGRect(x: 0, y: view.bounds.height - 50, width: view.bounds.width, height: 50)
         
         var w = view.bounds.width*0.5
         var pos = (view.bounds.width - w)/2
         
         if (gridState == nil) {
-            gridState = GameGridState(Words.getRandomWord(Size.FIVE.getGridSize(), Level.MEDIUM, Lang.RUS)!,
+            gridState = GameGridState(Words.getRandomWord(Size.FIVE.getGridSize(), Level.HARD, Lang.RUS)!,
                                             Size.FIVE, 0, Level.MEDIUM, Lang.RUS, "Игрок",
                                             UserPic.allCases[Int.random(in: 0..<UserPic.allCases.count)]);
         }
@@ -330,14 +343,6 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
 
         
         return gridView
-    }
-    
-    func randomCGFloat() -> CGFloat {
-        return CGFloat(arc4random()) / CGFloat(UInt32.max)
-    }
-
-    func randomColor() -> UIColor {
-        return UIColor(red: randomCGFloat(), green: randomCGFloat(), blue: randomCGFloat(), alpha: 1.0)
     }
     
     
@@ -362,6 +367,12 @@ class GameViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         self.gridState = GameGridState(Words.getRandomWord(size.getGridSize(), Level.HARD, lang)!, size, 0, level, lang, name, pic);
         self.wordView?.removeFromSuperview()
         self.initGame();
+        
+       /* GameCreator.shared.viewController = self
+        GameCreator.shared.createGameAndGenerateLink(completion: { (k,v) in
+            var i: Int = 0
+            i += 1
+        })*/
     }
 
     @objc func nextGamePressed() {

@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import balda_2
 
 final class balda_2Tests: XCTestCase {
 

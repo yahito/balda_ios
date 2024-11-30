@@ -24,8 +24,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //self.window = UIWindow(frame: UIScreen.main.bounds)
         
         if state == nil {
-            mainVC.gridState = GameGridState(Words.getRandomWord(Size.FIVE.getGridSize(), Level.MEDIUM, Lang.RUS)!,
-                                             Size.FIVE, 0, Level.MEDIUM, Lang.RUS, "Игрок",
+            
+            var defaultSize = Size.FIVE
+            
+            if (CommandLine.arguments.contains("UI_TEST_NINE")) {
+                defaultSize = Size.NINE
+            } else if (CommandLine.arguments.contains("UI_TEST_SEVEN")) {
+                defaultSize = Size.SEVEN
+            }
+            
+            let word = Words.getRandomWord(defaultSize.getGridSize(), Level.HARD, Lang.RUS)!
+            
+            mainVC.gridState = GameGridState(word,
+                                             defaultSize, 0, Level.MEDIUM, Lang.RUS, "Игрок",
                                              UserPic.allCases[Int.random(in: 0..<UserPic.allCases.count)]);
         } else {
             mainVC.gridState = state

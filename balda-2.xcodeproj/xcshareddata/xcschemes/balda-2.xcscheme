@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1500"
+   LastUpgradeVersion = "1600"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -48,6 +48,17 @@
                BlueprintIdentifier = "5F23FC072ABE257400417468"
                BuildableName = "balda-2UITests.xctest"
                BlueprintName = "balda-2UITests"
+               ReferencedContainer = "container:balda-2.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5F8EBC7A2CD36F6300F26D5D"
+               BuildableName = "BaldaUITests.xctest"
+               BlueprintName = "BaldaUITests"
                ReferencedContainer = "container:balda-2.xcodeproj">
             </BuildableReference>
          </TestableReference>

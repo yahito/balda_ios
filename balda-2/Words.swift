@@ -8,14 +8,39 @@
 import Foundation
 import UIKit
 
+struct SeededGenerator: RandomNumberGenerator {
+    private var seed: UInt64
+    
+    init(seed: UInt64) {
+        self.seed = seed
+    }
+    
+    mutating func next() -> UInt64 {
+        seed = seed &* 6364136223846793005 &+ 1 // A simple linear congruential generator
+        return seed
+    }
+}
 
 class Dict {
     var alphabet: String
     var data: Data
     var charToIndex: [Character: Int] = [:]
     var indexToChar: [Int : Character] = [:]
-    
+    public static var numGenerator: RandomNumberGenerator = randomGen()
+            
+    static func randomGen() -> RandomNumberGenerator {
+        let isRunningTests = ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
+
+        if isRunningTests {
+            return SystemRandomNumberGenerator()
+        } else {
+            return SeededGenerator(seed: 32423342)
+        }
+        
+    }
     init(_ resourceName: String, _ rus: Bool) {
+  
+        
         guard let dataAsset = NSDataAsset(name: resourceName) else {
             fatalError("Failed to find data asset: trie")
         }
@@ -39,7 +64,7 @@ class Dict {
     }
     
     func findRandomWord(_ buffer: inout String, _ length: Int) -> Bool {
-        var numGenerator = SystemRandomNumberGenerator()
+        
         buffer.removeAll()
         var currPos = 0
         
@@ -49,8 +74,14 @@ class Dict {
 
             size = Int(data[currPos])
             currPos += 1
+            
+            if size == 0 {
+                return false
+            }
+            
+            
 
-            let rndNode = Int(numGenerator.next(upperBound: UInt64(size)))
+            let rndNode = Int(Dict.numGenerator.next(upperBound: UInt64(size)))
 
             currPos += (rndNode * 3)
 
@@ -218,7 +249,7 @@ class Words {
          }
 
          // Load the data from the asset
-         hardDict = Dict("trie", true)
+         hardDict = Dict("rus_complex", true)
          
          // Load the data from the asset
          mediumDict = Dict("trie_level_2", true)
@@ -277,7 +308,6 @@ class Words {
     }
     
     public static func getNextRandomWord(buffer: inout String, length: Int, level: Level, lang: Lang) -> Bool {
-        var numGenerator = SystemRandomNumberGenerator()
         buffer.removeAll()
     
         return getDict(level, lang).findRandomWord(&buffer, length)

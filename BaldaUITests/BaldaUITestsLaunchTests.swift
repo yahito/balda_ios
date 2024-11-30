@@ -1,13 +1,13 @@
 //
-//  balda_2UITestsLaunchTests.swift
-//  balda-2UITests
+//  BaldaUITestsLaunchTests.swift
+//  BaldaUITests
 //
-//  Created by Andrey on 22/09/2023.
+//  Created by Andrey on 31/10/2024.
 //
 
 import XCTest
 
-final class balda_2UITestsLaunchTests: XCTestCase {
+final class BaldaUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
@@ -17,7 +17,9 @@ final class balda_2UITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
+    @MainActor
     func testLaunch() throws {
+        print("sfsfsdfsdfsdf")
         let app = XCUIApplication()
         app.launch()
 

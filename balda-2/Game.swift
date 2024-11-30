@@ -72,12 +72,22 @@ class Game {
     var allowUncommited: Bool = false
     
     var block: Bool = false
+    
+    var firstOpponent: Opponent?
 
     init(_ state: GameGridState, _ view: GridView) {
         self.view = view
         self.state = state
-        self.opponent1 = LocalOpponent(game: self)
+        
+        if (CommandLine.arguments.contains("UI_TEST_TRIGGER_GENERIC_EVENT")) {
+            self.opponent1 = CompOpponent(game: self, level: state.level)
+        } else {
+            self.opponent1 = LocalOpponent(game: self)
+        }
+                
         self.opponent2 = CompOpponent(game: self, level: state.level)
+        
+        self.firstOpponent = self.opponent1!
         
         if state.turn == 0 {
             self.currentOpponent = self.opponent1
@@ -85,7 +95,7 @@ class Game {
             self.currentOpponent = self.opponent2
         }
         
-        NotificationCenter.default.post(name: .opponentChanged, object: nil, userInfo: ["local": currentOpponent is LocalOpponent, "lang": state.lang.languageCode])
+        onPlayerChanged()
     }
 
     
@@ -135,12 +145,23 @@ class Game {
             return
         }
         
-        NotificationCenter.default.post(name: .opponentChanged, object: nil, userInfo: ["local": currentOpponent is LocalOpponent, "lang": state.lang.languageCode])
+        onPlayerChanged()
         
         
-        DispatchQueue.global(qos: .userInitiated).async {
-            self.currentOpponent!.nextStep()
+        if (CommandLine.arguments.contains("UI_TEST_TRIGGER_GENERIC_EVENT")) {
+            DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 3.0) {
+                self.currentOpponent!.nextStep()
+            }
+        } else {
+            DispatchQueue.global(qos: .userInitiated).async {
+                self.currentOpponent!.nextStep()
+            }
         }
+    }
+    
+    
+    func onPlayerChanged() {
+        NotificationCenter.default.post(name: .opponentChanged, object: nil, userInfo: ["local": currentOpponent! === firstOpponent!, "lang": state.lang.languageCode])
     }
     
     public func skipStep() {
@@ -369,6 +390,7 @@ class Game {
                                              { bomb in
                         self.cancelSelection()
                         self.block = false
+                        
                     }, false)
                  
                     return Result.NONE
@@ -498,9 +520,3 @@ public class OpponentInfo {
     }
 }
 
-extension Notification.Name {
-    static let opponentChanged = Notification.Name("opponentChanged")
-    static let gameFinished = Notification.Name("gameFinished")
-    static let wordChanged = Notification.Name("wordChanged")
-    static let showKeyboard = Notification.Name("showKeyboard")
-}

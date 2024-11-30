@@ -38,7 +38,7 @@ class GridView: UIView, CAAnimationDelegate {
         k.userSelected = false
     }
     
-    fileprivate func refreshAllCells() {
+    fileprivate func refreshAllCells() {            
         self.lettersCells.forEach {w in
             w.forEach{ k in
                 refreshCell(k)

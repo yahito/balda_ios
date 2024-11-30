@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+Target 'balda-2' in project 'balda-2' (no dependencies)

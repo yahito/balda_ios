@@ -1,0 +1,8 @@
+import Foundation
+
+extension Notification.Name {
+    static let opponentChanged = Notification.Name("opponentChanged")
+    static let gameFinished = Notification.Name("gameFinished")
+    static let wordChanged = Notification.Name("wordChanged")
+    static let showKeyboard = Notification.Name("showKeyboard")
+}
