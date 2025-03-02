@@ -67,13 +67,6 @@ The codebase includes initial work for Game Center integration through the `Game
 - Xcode 13.0 or later
 - Swift 5.5 or later
 
-### Building
-
-1. Clone the repository
-2. Open `balda-2.xcodeproj` in Xcode
-3. Select your target device
-4. Build and run the project
-
 ## Game Controls
 
 - **Skip Button**: Skip your turn
@@ -98,10 +91,6 @@ The codebase includes initial work for Game Center integration through the `Game
 - Enhanced animations and visual effects
 - Achievements and statistics tracking
 
-## License
+## Appstore
+[appstore](https://apps.apple.com/nl/app/%D0%B1%D0%B0%D0%BB%D0%B4%D0%B0-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D0%BA/id6737589357?l=en-GB)
 
-[Specify license information]
-
-## Credits
-
-[Add developer credits and acknowledgments]
